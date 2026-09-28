@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Website Portfolio | Barbed Wire Glove Games LLC</title>
+<meta name="description" content="Sample websites for small and local businesses: a bakery, a plumbing company and a fitness studio. Fast, mobile-friendly, hand-built.">
+<meta property="og:title" content="Website Portfolio | Barbed Wire Glove Games LLC">
+<meta property="og:description" content="Fast, mobile-friendly websites for small and local businesses.">
+<meta property="og:image" content="img/summit-ridge-plumbing.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root { --ink:#16181d; --muted:#5b6170; --line:#e3e5ea; --bg:#f6f7f9; --card:#fff; --accent:#c2410c; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif; color:var(--ink); background:var(--bg); line-height:1.55; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding-inline: 20px; }
+  header { padding-block: 56px 32px; }
+  .eyebrow { font-size: .78rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); }
+  h1 { font-size: clamp(2rem, 4.5vw, 3.2rem); line-height: 1.1; margin: .4rem 0 1rem; font-weight: 800; text-wrap: balance; }
+  header p { max-width: 62ch; color: var(--muted); font-size: 1.08rem; margin: 0; }
+  .grid { display: grid; gap: 28px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); padding-block: 12px 40px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; }
+  .card img { display:block; width:100%; height:auto; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; border-bottom: 1px solid var(--line); }
+  .card .body { padding: 18px 20px 22px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+  .card h2 { font-size: 1.15rem; margin: 0; }
+  .card p { margin: 0; color: var(--muted); font-size: .95rem; flex: 1; }
+  .tags { font-size: .8rem; color: var(--muted); }
+  .btn { align-self: flex-start; margin-top: 6px; display: inline-block; padding: .6rem 1rem; border-radius: 999px; background: var(--ink); color: #fff; text-decoration: none; font-weight: 600; font-size: .92rem; }
+  .btn:focus-visible, .btn:hover { background: var(--accent); outline: none; }
+  .phones { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 24px; display: grid; gap: 18px; grid-template-columns: minmax(0,1fr) minmax(0,1.3fr); align-items: center; margin-bottom: 40px; }
+  .phones img { width: 100%; height: auto; border-radius: 10px; }
+  .phones h2 { margin: 0 0 .5rem; font-size: 1.3rem; }
+  .phones p { margin: 0; color: var(--muted); }
+  @media (max-width: 760px) { .phones { grid-template-columns: 1fr; } }
+  footer { border-top: 1px solid var(--line); padding-block: 24px 40px; color: var(--muted); font-size: .88rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Barbed Wire Glove Games LLC · Web design</div>
+    <h1>Fast, mobile-friendly websites for small &amp; local businesses</h1>
+    <p>Three sample sites showing the kind of work I deliver: custom design, click-to-call and quote forms, prices and hours up front, and Google-friendly business details. Hand-written HTML and CSS, each well under 50&nbsp;KB, so they load fast on any phone.</p>
+  </header>
+
+  <main>
+    <div class="grid">
+      <article class="card">
+        <img src="img/juniper-rye-bakehouse.png" alt="Juniper &amp; Rye Bakehouse homepage: cream and forest-green design with an illustrated loaf of bread and a Today's Bake card" loading="lazy">
+        <div class="body">
+          <h2>Juniper &amp; Rye Bakehouse</h2>
+          <p>A warm, illustrated bakery site with a priced menu, custom-cake order form, hours and map, and FAQ.</p>
+          <div class="tags">Bakery · Café · Order form</div>
+          <a class="btn" href="juniper-rye-bakehouse/">View live site</a>
+        </div>
+      </article>
+      <article class="card">
+        <img src="img/summit-ridge-plumbing.png" alt="Summit Ridge Plumbing &amp; Heating homepage: navy and orange design with an emergency-service badge and a big call button" loading="lazy">
+        <div class="body">
+          <h2>Summit Ridge Plumbing &amp; Heating</h2>
+          <p>A lead-generation site built to turn visitors into calls: 24/7 click-to-call, priced services, free-quote form, service-area map.</p>
+          <div class="tags">Trades · Home services · Lead gen</div>
+          <a class="btn" href="summit-ridge-plumbing/">View live site</a>
+        </div>
+      </article>
+      <article class="card">
+        <img src="img/ironwood-strength.png" alt="Ironwood Strength Co. homepage: dark theme with red accents, bold condensed headline and a barbell illustration" loading="lazy">
+        <div class="body">
+          <h2>Ironwood Strength Co.</h2>
+          <p>An energetic fitness-studio site with a phone-friendly weekly schedule, membership tiers, coach bios and a free-trial signup.</p>
+          <div class="tags">Gym · Studio · Class schedule</div>
+          <a class="btn" href="ironwood-strength/">View live site</a>
+        </div>
+      </article>
+    </div>
+
+    <section class="phones">
+      <div>
+        <h2>Built for phones first</h2>
+        <p>Most local customers find you on a phone. Every site gets a sticky call or book button, readable text and tap-friendly menus at 360&nbsp;px and up.</p>
+      </div>
+      <img src="img/phones.png" alt="The three sample sites shown side by side at phone width" loading="lazy">
+    </section>
+  </main>
+
+  <footer>All three businesses are fictional; these are portfolio samples by Barbed Wire Glove Games LLC. Phone numbers and addresses are placeholders.</footer>
+</div>
+</body>
+</html>
