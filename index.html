@@ -3,89 +3,212 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Website Portfolio | Barbed Wire Glove Games LLC</title>
-<meta name="description" content="Sample websites for small and local businesses: a bakery, a plumbing company and a fitness studio. Fast, mobile-friendly, hand-built.">
-<meta property="og:title" content="Website Portfolio | Barbed Wire Glove Games LLC">
-<meta property="og:description" content="Fast, mobile-friendly websites for small and local businesses.">
-<meta property="og:image" content="img/summit-ridge-plumbing.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-<style>
-  :root { --ink:#16181d; --muted:#5b6170; --line:#e3e5ea; --bg:#f6f7f9; --card:#fff; --accent:#c2410c; }
-  * { box-sizing: border-box; }
-  body { margin:0; font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif; color:var(--ink); background:var(--bg); line-height:1.55; }
-  .wrap { max-width: 1120px; margin: 0 auto; padding-inline: 20px; }
-  header { padding-block: 56px 32px; }
-  .eyebrow { font-size: .78rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); }
-  h1 { font-size: clamp(2rem, 4.5vw, 3.2rem); line-height: 1.1; margin: .4rem 0 1rem; font-weight: 800; text-wrap: balance; }
-  header p { max-width: 62ch; color: var(--muted); font-size: 1.08rem; margin: 0; }
-  .grid { display: grid; gap: 28px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); padding-block: 12px 40px; }
-  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; }
-  .card img { display:block; width:100%; height:auto; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; border-bottom: 1px solid var(--line); }
-  .card .body { padding: 18px 20px 22px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
-  .card h2 { font-size: 1.15rem; margin: 0; }
-  .card p { margin: 0; color: var(--muted); font-size: .95rem; flex: 1; }
-  .tags { font-size: .8rem; color: var(--muted); }
-  .btn { align-self: flex-start; margin-top: 6px; display: inline-block; padding: .6rem 1rem; border-radius: 999px; background: var(--ink); color: #fff; text-decoration: none; font-weight: 600; font-size: .92rem; }
-  .btn:focus-visible, .btn:hover { background: var(--accent); outline: none; }
-  .phones { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 24px; display: grid; gap: 18px; grid-template-columns: minmax(0,1fr) minmax(0,1.3fr); align-items: center; margin-bottom: 40px; }
-  .phones img { width: 100%; height: auto; border-radius: 10px; }
-  .phones h2 { margin: 0 0 .5rem; font-size: 1.3rem; }
-  .phones p { margin: 0; color: var(--muted); }
-  @media (max-width: 760px) { .phones { grid-template-columns: 1fr; } }
-  footer { border-top: 1px solid var(--line); padding-block: 24px 40px; color: var(--muted); font-size: .88rem; }
-</style>
+<title>Website work | Barbed Wire Glove Games LLC</title>
+<meta name="description" content="Three sample websites for small businesses (a bakery, a plumber and a barbell gym), each built around the question its customers ask first. By Barbed Wire Glove Games LLC, a one-person studio in Colorado.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Website work | Barbed Wire Glove Games LLC">
+<meta property="og:description" content="Three sample websites for small businesses, each built around the question its customers ask first.">
+<meta property="og:url" content="https://ausomea.github.io/cvc-web-portfolio/">
+<meta property="og:image" content="https://ausomea.github.io/cvc-web-portfolio/hub-assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#E3E6E5">
+<link rel="icon" href="hub-assets/mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="hub.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Barbed Wire Glove Games LLC","description":"One-person studio in Colorado that ships its own games and apps and builds websites for small and local businesses.","address":{"@type":"PostalAddress","addressRegion":"CO","addressCountry":"US"}}
+</script>
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <div class="eyebrow">Barbed Wire Glove Games LLC · Web design</div>
-    <h1>Fast, mobile-friendly websites for small &amp; local businesses</h1>
-    <p>Three sample sites showing the kind of work I deliver: custom design, click-to-call and quote forms, prices and hours up front, and Google-friendly business details. Hand-written HTML and CSS, each well under 50&nbsp;KB, so they load fast on any phone.</p>
-  </header>
+<a class="skip" href="#work">Skip to the sample sites</a>
 
-  <main>
-    <div class="grid">
-      <article class="card">
-        <img src="img/juniper-rye-bakehouse.png" alt="Juniper &amp; Rye Bakehouse homepage: cream and forest-green design with an illustrated loaf of bread and a Today's Bake card" loading="lazy">
-        <div class="body">
-          <h2>Juniper &amp; Rye Bakehouse</h2>
-          <p>A warm, illustrated bakery site with a priced menu, custom-cake order form, hours and map, and FAQ.</p>
-          <div class="tags">Bakery · Café · Order form</div>
-          <a class="btn" href="juniper-rye-bakehouse/">View live site</a>
-        </div>
-      </article>
-      <article class="card">
-        <img src="img/summit-ridge-plumbing.png" alt="Summit Ridge Plumbing &amp; Heating homepage: navy and orange design with an emergency-service badge and a big call button" loading="lazy">
-        <div class="body">
-          <h2>Summit Ridge Plumbing &amp; Heating</h2>
-          <p>A lead-generation site built to turn visitors into calls: 24/7 click-to-call, priced services, free-quote form, service-area map.</p>
-          <div class="tags">Trades · Home services · Lead gen</div>
-          <a class="btn" href="summit-ridge-plumbing/">View live site</a>
-        </div>
-      </article>
-      <article class="card">
-        <img src="img/ironwood-strength.png" alt="Ironwood Strength Co. homepage: dark theme with red accents, bold condensed headline and a barbell illustration" loading="lazy">
-        <div class="body">
-          <h2>Ironwood Strength Co.</h2>
-          <p>An energetic fitness-studio site with a phone-friendly weekly schedule, membership tiers, coach bios and a free-trial signup.</p>
-          <div class="tags">Gym · Studio · Class schedule</div>
-          <a class="btn" href="ironwood-strength/">View live site</a>
-        </div>
-      </article>
+<header class="top">
+  <div class="wrap top__in">
+    <a class="brand" href="./">
+      <svg class="brand__mark" viewBox="0 0 48 24" width="44" height="22" aria-hidden="true" focusable="false">
+        <g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+          <path d="M2 12c5.5-5 10.5-5 16 0s10.5 5 16 0 8-4 12-2"/>
+          <path d="M2 12c5.5 5 10.5 5 16 0s10.5-5 16 0 8 4 12 2"/>
+          <path d="M20.5 4.5l7 15M27.5 4.5l-7 15"/>
+        </g>
+      </svg>
+      <span class="brand__name">Barbed Wire Glove Games</span>
+    </a>
+    <nav class="top__nav" aria-label="On this page">
+      <a href="#work">Sample sites</a>
+      <a href="#games">Games and apps</a>
+    </nav>
+    <!-- PLACEHOLDER: no public Upwork profile yet. When there is one, replace href="#hire" with the profile URL. -->
+    <a class="cta" href="#hire" data-placeholder="upwork-profile-url">Hire me on Upwork</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="intro wrap" aria-labelledby="intro-title">
+    <h1 id="intro-title">Websites for small businesses, built around the question their customers ask first.</h1>
+    <div class="intro__side">
+      <p>Barbed Wire Glove Games is my one-person studio in Colorado. Besides my own games and apps, I build fast, phone-friendly websites for small and local businesses, by hand with AI-assisted tools, and a person reviews and tests every one.</p>
+      <p>The businesses below are made up. The sites are finished and working, so try them.</p>
     </div>
+  </section>
 
-    <section class="phones">
-      <div>
-        <h2>Built for phones first</h2>
-        <p>Most local customers find you on a phone. Every site gets a sticky call or book button, readable text and tap-friendly menus at 360&nbsp;px and up.</p>
+  <ul class="asks wrap" aria-label="The three sample sites">
+    <li style="--row:0">
+      <a class="ask ask--jr" href="#juniper-rye">
+        <span class="ask__q">“When should I come in?”</span>
+        <span class="ask__who"><span class="ask__name">Juniper &amp; Rye Bakehouse</span> A sourdough bakery</span>
+        <span class="bar" aria-hidden="true"><i style="--c:#2A2F33;--n:0"></i><i class="lt" style="--c:#ECECE8;--n:1"></i><i style="--c:#C9A77E;--n:2"></i><i style="--c:#33241C;--n:3"></i><i style="--c:#3D4A6E;--n:4"></i><i style="--c:#E8A23A;--n:5"></i></span>
+      </a>
+    </li>
+    <li style="--row:1">
+      <a class="ask ask--sr" href="#summit-ridge">
+        <span class="ask__q">“What’s wrong, and how much?”</span>
+        <span class="ask__who"><span class="ask__name">Summit Ridge Plumbing &amp; Heating</span> A plumber on call 24/7</span>
+        <span class="bar" aria-hidden="true"><i style="--c:#163F3A;--n:0"></i><i style="--c:#C4291F;--n:1"></i><i style="--c:#1C5AA3;--n:2"></i><i class="lt" style="--c:#FCEFA8;--n:3"></i><i class="lt" style="--c:#E5E9E6;--n:4"></i></span>
+      </a>
+    </li>
+    <li style="--row:2">
+      <a class="ask ask--iw" href="#ironwood">
+        <span class="ask__q">“Which plates go on the bar?”</span>
+        <span class="ask__who"><span class="ask__name">Ironwood Strength Co.</span> A barbell gym</span>
+        <span class="bar" aria-hidden="true"><i class="lt" style="--c:#ECEDE9;--n:0"></i><i style="--c:#152A2D;--n:1"></i><i style="--c:#C9A46C;--n:2"></i><i style="--c:#D0262D;--n:3"></i><i style="--c:#1F5BB0;--n:4"></i><i style="--c:#F1C232;--n:5"></i><i style="--c:#277D43;--n:6"></i></span>
+      </a>
+    </li>
+  </ul>
+
+  <div id="work" class="work">
+
+    <article class="site wrap" id="juniper-rye" aria-labelledby="jr-name">
+      <header class="site__head">
+        <div>
+          <h2 id="jr-name">Juniper &amp; Rye Bakehouse</h2>
+          <p class="site__what">A sourdough bakery in Fort Collins, Colorado. Fictional business, working site.</p>
+        </div>
+        <a class="site__open" href="./juniper-rye-bakehouse/">View the live site</a>
+      </header>
+      <figure class="screen" data-name="Juniper &amp; Rye Bakehouse">
+        <img class="screen__img" src="media/juniper-rye-bakehouse-poster.jpg" data-fallback="hub-assets/juniper-rye-bakehouse-desktop.webp" onerror="this.onerror=null;this.src=this.dataset.fallback" width="1440" height="900" loading="lazy" decoding="async" alt="The Juniper &amp; Rye Bakehouse home page on a laptop: the shop name set like a sign over a steel-grey panel that lists today's bakes by the time they come out of the oven, next to a photo of floured loaves.">
+        <video class="screen__loop" muted loop playsinline preload="none" data-src="media/juniper-rye-bakehouse-loop.mp4" aria-hidden="true" tabindex="-1"></video>
+        <a class="screen__hit" href="./juniper-rye-bakehouse/" tabindex="-1" aria-hidden="true"></a>
+        <button class="loop-btn" type="button" hidden>Pause</button>
+      </figure>
+      <img class="phone" src="hub-assets/juniper-rye-bakehouse-phone.webp" width="390" height="844" loading="lazy" decoding="async" alt="The same page on a phone: the sign, a photo of loaves, then the oven schedule, with call and cake-order buttons fixed at the bottom.">
+      <div class="site__text">
+        <p>Bakery customers want to know when to come in, so the page opens on today’s oven schedule. It reads the visitor’s own clock and shows what’s in the oven, what comes out next and what’s usually gone by now, with a marker you can drag to plan a later visit.</p>
+        <p>Further down, a cake builder draws the cake in cross-section as you pick the size, sponge, filling and finish, prices it, and ends in a request form. It’s a demo, so nothing is sent.</p>
       </div>
-      <img src="img/phones.png" alt="The three sample sites shown side by side at phone width" loading="lazy">
-    </section>
-  </main>
+      <dl class="site__spec">
+        <dt>Colors, from the bake room</dt>
+        <dd><ul class="swatches">
+          <li><i style="--c:#2A2F33"></i>Oven steel</li><li><i class="lt" style="--c:#ECECE8"></i>Flour</li><li><i style="--c:#C9A77E"></i>Kraft</li><li><i style="--c:#33241C"></i>Rye</li><li><i style="--c:#3D4A6E"></i>Juniper</li><li><i style="--c:#E8A23A"></i>Ember</li>
+        </ul></dd>
+        <dt>Type</dt>
+        <dd>Big Shoulders and Literata</dd>
+      </dl>
+    </article>
 
-  <footer>All three businesses are fictional; these are portfolio samples by Barbed Wire Glove Games LLC. Phone numbers and addresses are placeholders.</footer>
-</div>
+    <article class="site wrap" id="summit-ridge" aria-labelledby="sr-name">
+      <header class="site__head">
+        <div>
+          <h2 id="sr-name">Summit Ridge Plumbing &amp; Heating</h2>
+          <p class="site__what">A residential plumbing and heating company in northern Colorado. Fictional business, working site.</p>
+        </div>
+        <a class="site__open" href="./summit-ridge-plumbing/">View the live site</a>
+      </header>
+      <figure class="screen" data-name="Summit Ridge Plumbing &amp; Heating">
+        <img class="screen__img" src="media/summit-ridge-plumbing-poster.jpg" data-fallback="hub-assets/summit-ridge-plumbing-desktop.webp" onerror="this.onerror=null;this.src=this.dataset.fallback" width="1440" height="900" loading="lazy" decoding="async" alt="The Summit Ridge Plumbing &amp; Heating home page on a laptop: a spruce-green panel with the headline and a red call button, next to a photo of gloved hands fitting a pipe, over a red and blue stripe like the company truck.">
+        <video class="screen__loop" muted loop playsinline preload="none" data-src="media/summit-ridge-plumbing-loop.mp4" aria-hidden="true" tabindex="-1"></video>
+        <a class="screen__hit" href="./summit-ridge-plumbing/" tabindex="-1" aria-hidden="true"></a>
+        <button class="loop-btn" type="button" hidden>Pause</button>
+      </figure>
+      <img class="phone" src="hub-assets/summit-ridge-plumbing-phone.webp" width="390" height="844" loading="lazy" decoding="async" alt="The same page on a phone: the photo first, then the headline with a full-width red call button.">
+      <div class="site__text">
+        <p>People land on a plumber’s site in the middle of a problem. The “What’s going on?” tool asks which fixture is acting up and what it’s doing, then fills in a service ticket: the likely cause, what it usually costs, how urgent it is and one next step. Emergencies turn the ticket red with the phone number at full size.</p>
+        <p>The rest is what a homeowner checks before calling: a rate sheet with weekday and after-hours prices, and a town or ZIP check that says whether the truck comes out to you.</p>
+      </div>
+      <dl class="site__spec">
+        <dt>Colors, from the truck and the paperwork</dt>
+        <dd><ul class="swatches">
+          <li><i style="--c:#163F3A"></i>Spruce livery</li><li><i style="--c:#C4291F"></i>Hot line red</li><li><i style="--c:#1C5AA3"></i>Cold line blue</li><li><i class="lt" style="--c:#FCEFA8"></i>Ticket canary</li><li><i class="lt" style="--c:#E5E9E6"></i>Galvanized</li>
+        </ul></dd>
+        <dt>Type</dt>
+        <dd>Mona Sans, wide for the lettering and normal for reading</dd>
+      </dl>
+    </article>
+
+    <article class="site wrap" id="ironwood" aria-labelledby="iw-name">
+      <header class="site__head">
+        <div>
+          <h2 id="iw-name">Ironwood Strength Co.</h2>
+          <p class="site__what">A barbell gym in Greeley, Colorado. Fictional business, working site.</p>
+        </div>
+        <a class="site__open" href="./ironwood-strength/">View the live site</a>
+      </header>
+      <figure class="screen" data-name="Ironwood Strength Co.">
+        <img class="screen__img" src="media/ironwood-strength-poster.jpg" data-fallback="hub-assets/ironwood-strength-desktop.webp" onerror="this.onerror=null;this.src=this.dataset.fallback" width="1440" height="900" loading="lazy" decoding="async" alt="The Ironwood Strength Co. home page on a laptop: a condensed headline and a red booking button next to a photo of a loaded barbell on rubber flooring, with the plate loader starting below.">
+        <video class="screen__loop" muted loop playsinline preload="none" data-src="media/ironwood-strength-loop.mp4" aria-hidden="true" tabindex="-1"></video>
+        <a class="screen__hit" href="./ironwood-strength/" tabindex="-1" aria-hidden="true"></a>
+        <button class="loop-btn" type="button" hidden>Pause</button>
+      </figure>
+      <img class="phone" src="hub-assets/ironwood-strength-phone.webp" width="390" height="844" loading="lazy" decoding="async" alt="The same page on a phone: the headline, a booking button and the next class time, with call and booking buttons fixed at the bottom.">
+      <div class="site__text">
+        <p>The plate loader is a tool lifters actually use. Type a weight in kilograms or pounds and the right competition plates slide onto the bar, heaviest first, with the list for each side and the warm-up jumps worked out.</p>
+        <p>For people who haven’t lifted yet, there’s a weekly class schedule with filters and a live “next class starts in” line, and a free-class signup form. That form is a demo too.</p>
+      </div>
+      <dl class="site__spec">
+        <dt>Colors, from the lifting platform</dt>
+        <dd><ul class="swatches">
+          <li><i class="lt" style="--c:#ECEDE9"></i>Chalk</li><li><i style="--c:#152A2D"></i>Rubber</li><li><i style="--c:#C9A46C"></i>Platform wood</li><li><i style="--c:#D0262D"></i>Plate red</li><li><i style="--c:#1F5BB0"></i>Plate blue</li><li><i style="--c:#F1C232"></i>Plate yellow</li><li><i style="--c:#277D43"></i>Plate green</li>
+        </ul></dd>
+        <dt>Type</dt>
+        <dd>Archivo, from extra condensed to expanded</dd>
+      </dl>
+    </article>
+
+  </div>
+
+  <section class="games wrap" id="games" aria-labelledby="games-title">
+    <h2 id="games-title">The studio’s own games and apps</h2>
+    <ul class="games__list">
+      <li>
+        <h3>Trigonix</h3>
+        <p>A color puzzle game for phones.</p>
+        <p class="games__where">On <a href="https://play.google.com/store/apps/details?id=com.BWGGames.Trigonix">Google Play</a> and the <a href="https://apps.apple.com/app/id6757233558">App Store</a>.</p>
+      </li>
+      <li>
+        <h3>Chord Scribe</h3>
+        <p>A chord chart app for musicians.</p>
+        <p class="games__where">On <a href="https://play.google.com/store/apps/details?id=com.BWGGames.ChordScribe">Google Play</a>.</p>
+      </li>
+      <li>
+        <h3>PoolKit</h3>
+        <p>An Unreal Engine plugin that reuses actors instead of spawning and destroying them.</p>
+        <p class="games__where">On <a href="https://barbed-wire-glove-games.itch.io/poolkit">itch.io</a>.</p>
+      </li>
+    </ul>
+  </section>
+
+<section class="hire" id="hire" aria-labelledby="hire-title">
+  <div class="wrap hire__in">
+    <h2 id="hire-title">Hire me on Upwork</h2>
+    <div class="hire__text">
+      <p>I take website work through Upwork, so the contract, payments and messages all stay in one place.</p>
+      <p>If you found this page through one of my proposals, reply to it there and tell me about your business, starting with the question your customers ask you most.</p>
+      <!-- PLACEHOLDER: when the public Upwork profile URL exists, add
+           <a class="cta" href="PROFILE-URL">Hire me on Upwork</a> here and point the header link at the same URL. -->
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <p>© 2026 Barbed Wire Glove Games LLC, Colorado.</p>
+    <p>The bakery, plumbing company and gym are fictional businesses made as portfolio samples. Photo credits are in each site’s CREDITS file.</p>
+  </div>
+</footer>
+
+<script src="hub.js" defer></script>
 </body>
 </html>

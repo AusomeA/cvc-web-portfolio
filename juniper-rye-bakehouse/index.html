@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Juniper &amp; Rye Bakehouse | Fort Collins Bakery &amp; Cafe</title>
-<meta name="description" content="Neighborhood bakery and cafe in Fort Collins, CO. Naturally leavened bread, pastries, and coffee baked daily, plus custom cakes for weddings and celebrations.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Juniper &amp; Rye Bakehouse | Sourdough bread and pastry in Fort Collins</title>
+<meta name="description" content="Naturally leavened bread, croissants and coffee on Millstone Row in Fort Collins. See what's in the oven right now, what comes out next, and order a custom cake.">
+<meta name="theme-color" content="#2A2F33">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Juniper & Rye Bakehouse">
-<meta property="og:title" content="Juniper & Rye Bakehouse | Fort Collins Bakery & Cafe">
-<meta property="og:description" content="Neighborhood bakery and cafe in Fort Collins, CO. Naturally leavened bread, pastries, and coffee baked daily, plus custom cakes for weddings and celebrations.">
-<meta property="og:locale" content="en_US">
-<meta name="theme-color" content="#2F4A3B">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='19' fill='%232F4A3B'/%3E%3Cpath d='M20 9v22' stroke='%23C98A2C' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<meta property="og:site_name" content="Juniper &amp; Rye Bakehouse">
+<meta property="og:title" content="Juniper &amp; Rye Bakehouse, Fort Collins">
+<meta property="og:description" content="What's in the oven right now, what comes out next, and custom cakes to order.">
+<meta property="og:image" content="img/oven.webp">
+<meta property="og:image:width" content="1300">
+<meta property="og:image:height" content="731">
+<meta property="og:image:alt" content="A baker sliding scored country loaves into a deck oven">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='17' r='13' fill='%233D4A6E'/%3E%3Cpath d='M16 6v5M16 11l-4 3M16 11l4 3' stroke='%23A9B5D3' stroke-width='2' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/styles.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Bakery",
   "name": "Juniper & Rye Bakehouse",
-  "description": "Neighborhood bakery and cafe in Fort Collins, Colorado serving naturally leavened bread, pastries, coffee, and custom cakes.",
+  "description": "Neighborhood bakery in Fort Collins, Colorado: naturally leavened bread, pastry, coffee and custom cakes. Fictional business (portfolio sample).",
+  "image": "img/oven.webp",
+  "telephone": "+1-970-555-0148",
+  "priceRange": "$$",
+  "servesCuisine": ["Bakery", "Coffee"],
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "128 Millstone Row",
@@ -30,481 +34,321 @@
     "postalCode": "80521",
     "addressCountry": "US"
   },
-  "telephone": "+1-970-555-0148",
-  "priceRange": "$$",
-  "servesCuisine": ["Bakery", "Cafe", "Coffee"],
-  "areaServed": "Fort Collins, CO",
   "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-      "opens": "07:00",
-      "closes": "15:00"
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Sunday"],
-      "opens": "08:00",
-      "closes": "13:00"
-    }
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "opens": "07:00", "closes": "15:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "08:00", "closes": "13:00"}
   ]
 }
 </script>
 </head>
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
+<a class="skip" href="#oven">Skip to today's oven</a>
 
-<!-- Icon sprite (decorative + labeled icons reused via <use>) -->
-<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
-  <symbol id="icon-wheat" viewBox="0 0 40 40">
-    <circle cx="20" cy="20" r="19" fill="#2F4A3B"/>
-    <path d="M20 9v22" stroke="#C98A2C" stroke-width="2" stroke-linecap="round"/>
-    <g fill="#C98A2C">
-      <path d="M20 13c-3-2.4-6.2-1.3-7.4 1.6 3.1 1.1 6.3.1 7.4-1.6z"/>
-      <path d="M20 13c3-2.4 6.2-1.3 7.4 1.6-3.1 1.1-6.3.1-7.4-1.6z"/>
-      <path d="M20 18.6c-3-2.4-6.2-1.3-7.4 1.6 3.1 1.1 6.3.1 7.4-1.6z"/>
-      <path d="M20 18.6c3-2.4 6.2-1.3 7.4 1.6-3.1 1.1-6.3.1-7.4-1.6z"/>
-      <path d="M20 24.2c-3-2.4-6.2-1.3-7.4 1.6 3.1 1.1 6.3.1 7.4-1.6z"/>
-      <path d="M20 24.2c3-2.4 6.2-1.3 7.4 1.6-3.1 1.1-6.3.1-7.4-1.6z"/>
-    </g>
-  </symbol>
-  <symbol id="icon-bread" viewBox="0 0 48 48">
-    <path d="M6 30c0-12 8-20 18-20s18 8 18 20c0 6-4 10-18 10S6 36 6 30z" fill="#D9A45C"/>
-    <path d="M6 30c0-12 8-20 18-20s18 8 18 20" fill="none" stroke="#A66A2E" stroke-width="2"/>
-    <path d="M14 24c3-3 6-4 10-4s7 1 10 4" fill="none" stroke="#FBF3E4" stroke-width="2.5" stroke-linecap="round"/>
-    <path d="M12 31c4-3 8-4 12-4s8 1 12 4" fill="none" stroke="#FBF3E4" stroke-width="2.5" stroke-linecap="round"/>
-  </symbol>
-  <symbol id="icon-croissant" viewBox="0 0 48 48">
-    <path d="M8 30c2-14 12-20 20-18 6 1.5 4 8-1 9-7 1.5-9 6-6 11 3 4.5 11 4 15-4" fill="none" stroke="#C98A2C" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-  </symbol>
-  <symbol id="icon-coffee" viewBox="0 0 48 48">
-    <path d="M10 18h22v11c0 7-5 12-11 12s-11-5-11-12z" fill="#8C5A34"/>
-    <path d="M32 20h3a5 5 0 010 10h-3" fill="none" stroke="#8C5A34" stroke-width="3"/>
-    <path d="M14 12c1-2 3-2 3-4M20 12c1-2 3-2 3-4M26 12c1-2 3-2 3-4" fill="none" stroke="#8C5A34" stroke-width="2" stroke-linecap="round"/>
-  </symbol>
-  <symbol id="icon-cake" viewBox="0 0 48 48">
-    <rect x="8" y="24" width="32" height="14" rx="2" fill="#E7B65C"/>
-    <rect x="8" y="24" width="32" height="6" fill="#8C3A4B"/>
-    <rect x="21" y="10" width="6" height="10" rx="2" fill="#C98A2C"/>
-    <path d="M24 6c-2 2-2 4 0 6 2-2 2-4 0-6z" fill="#8C3A4B"/>
-  </symbol>
-  <symbol id="icon-pin" viewBox="0 0 24 24">
-    <path d="M12 2c-4.4 0-8 3.5-8 8 0 6 8 12 8 12s8-6 8-12c0-4.5-3.6-8-8-8z" fill="#8C3A4B"/>
-    <circle cx="12" cy="10" r="3.2" fill="#FBF3E4"/>
-  </symbol>
-  <symbol id="icon-phone" viewBox="0 0 24 24">
-    <path d="M6.6 3h3l1.4 4.6-2.3 1.7a13 13 0 006 6l1.7-2.3L21 14.4v3c0 1.2-1 2.1-2.2 1.9C10.9 18 6 13.1 4.7 5.2 4.5 4 5.4 3 6.6 3z" fill="#2F4A3B"/>
-  </symbol>
-  <symbol id="icon-clock" viewBox="0 0 24 24">
-    <circle cx="12" cy="12" r="9" fill="none" stroke="#2F4A3B" stroke-width="2"/>
-    <path d="M12 7v5l3.5 2" fill="none" stroke="#2F4A3B" stroke-width="2" stroke-linecap="round"/>
-  </symbol>
-  <symbol id="icon-quote" viewBox="0 0 32 24">
-    <path d="M4 24V14C4 7 8 2 15 0v5C11 6 9 9 9 13h6v11H4zM19 24V14c0-7 4-12 11-14v5c-4 1-6 4-6 8h6v11H19z" fill="#C98A2C"/>
-  </symbol>
-  <symbol id="icon-menu" viewBox="0 0 24 24">
-    <path d="M3 6h18M3 12h18M3 18h18" fill="none" stroke="#FBF3E4" stroke-width="2" stroke-linecap="round"/>
-  </symbol>
-  <symbol id="icon-close" viewBox="0 0 24 24">
-    <path d="M5 5l14 14M19 5L5 19" fill="none" stroke="#FBF3E4" stroke-width="2" stroke-linecap="round"/>
-  </symbol>
-</svg>
-
-<header class="site-header" id="top">
-  <div class="header-inner">
-    <a class="brand" href="#top">
-      <svg class="brand-mark" width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><use href="#icon-wheat"></use></svg>
-      <span class="brand-text">Juniper &amp; Rye<span class="brand-sub">Bakehouse</span></span>
+<header class="sign">
+  <div class="wrap sign__bar">
+    <a class="mark" href="#top" aria-label="Juniper &amp; Rye Bakehouse, back to top">
+      <svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true"><circle cx="16" cy="17" r="13" fill="#A9B5D3"/><path d="M16 6v5M16 11l-4 3M16 11l4 3" stroke="#2A2F33" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+      <span>Juniper &amp; Rye</span>
     </a>
-    <nav class="site-nav" id="site-nav" aria-label="Primary">
-      <ul>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#cakes">Custom Cakes</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#visit">Visit</a></li>
-      </ul>
+    <nav class="nav" aria-label="Main">
+      <a href="#menu">Menu</a>
+      <a href="#cakes">Cakes</a>
+      <a href="#visit">Visit</a>
     </nav>
-    <a class="btn btn-primary header-cta" href="tel:+19705550148">Order Ahead</a>
-    <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
-      <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-menu"></use></svg>
-    </button>
+    <a class="sign__phone" href="tel:+19705550148">(970) 555-0148</a>
+  </div>
+  <div class="wrap sign__head" id="top">
+    <h1 class="sign__name">Juniper &amp; Rye Bakehouse</h1>
+    <p class="sign__sub">Naturally leavened bread, pastry and coffee from one deck oven on Millstone Row, Fort Collins.</p>
   </div>
 </header>
 
-<main id="main">
+<main>
+  <section class="oven" id="oven" aria-labelledby="board-title">
+    <div class="board" id="board">
+      <div class="board__top">
+        <h2 class="board__title" id="board-title">Today's oven</h2>
+        <p class="board__clock" id="board-clock">Tuesday, 8:12 am</p>
+      </div>
+      <p class="board__say" id="board-say">Focaccia comes out at 9:00.</p>
+      <p class="board__more" id="board-more">Country loaves, baguettes and croissants are on the shelf now.</p>
 
-  <!-- HERO -->
-  <section class="hero" aria-labelledby="hero-heading">
-    <div class="hero-inner">
-      <div class="hero-copy">
-        <p class="eyebrow">Fort Collins, Colorado &middot; Est. 2019</p>
-        <h1 id="hero-heading">Bread worth setting an alarm for.</h1>
-        <p class="hero-lede">Juniper &amp; Rye Bakehouse bakes naturally leavened bread, laminated pastries, and small-batch coffee every morning on Mulberry Fields Lane &mdash; plus custom cakes for the days that call for one.</p>
-        <div class="today-card">
-          <svg width="28" height="28" viewBox="0 0 48 48" aria-hidden="true"><use href="#icon-bread"></use></svg>
-          <div>
-            <p class="today-label">Today&rsquo;s Bake</p>
-            <p class="today-item">Honey Lavender Sourdough</p>
-            <p class="today-desc">Slow-fermented for 36 hours, folded with local wildflower honey and a touch of culinary lavender. Limited loaves &mdash; usually gone by 11am.</p>
+      <div class="rail" id="rail">
+        <ol class="bakes" id="bakes" aria-label="Bake schedule">
+          <li class="bake"><span class="bake__t">6:30</span><span class="bake__n">Country loaf</span><span class="bake__s"></span></li>
+          <li class="bake"><span class="bake__t">6:50</span><span class="bake__n">Baguettes</span><span class="bake__s"></span></li>
+          <li class="bake is-event"><span class="bake__t">7:00</span><span class="bake__n">Doors open</span><span class="bake__s"></span></li>
+          <li class="bake"><span class="bake__t">7:15</span><span class="bake__n">Brown butter croissants</span><span class="bake__s"></span></li>
+          <li class="bake"><span class="bake__t">7:40</span><span class="bake__n">Cardamom morning buns</span><span class="bake__s"></span></li>
+          <li class="bake"><span class="bake__t">8:30</span><span class="bake__n">Rye bâtard</span><span class="bake__s"></span></li>
+          <li class="bake"><span class="bake__t">9:00</span><span class="bake__n">Focaccia of the day</span><span class="bake__s"></span></li>
+          <li class="bake"><span class="bake__t">10:15</span><span class="bake__n">Croissants, second bake</span><span class="bake__s"></span></li>
+          <li class="bake"><span class="bake__t">11:00</span><span class="bake__n">Country loaf, second bake</span><span class="bake__s"></span></li>
+          <li class="bake"><span class="bake__t">12:30</span><span class="bake__n">Ginger molasses cookies</span><span class="bake__s"></span></li>
+          <li class="bake is-event"><span class="bake__t">3:00</span><span class="bake__n">We close</span><span class="bake__s"></span></li>
+        </ol>
+        <div class="needle" id="needle" hidden>
+          <div class="needle__line"></div>
+          <div class="needle__handle" id="needle-handle" role="slider" tabindex="0" aria-label="Arrival time" aria-valuemin="0" aria-valuemax="1440" aria-valuenow="0">
+            <span class="needle__tag" id="needle-tag">now</span>
           </div>
         </div>
-        <div class="hero-actions">
-          <a class="btn btn-primary btn-lg" href="tel:+19705550148">
-            <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-phone"></use></svg>
-            Order Ahead: (970) 555-0148
-          </a>
-          <a class="btn btn-ghost btn-lg" href="#cakes">Plan a Custom Cake</a>
-        </div>
       </div>
-      <div class="hero-art" aria-hidden="true">
-        <svg viewBox="0 0 320 240" width="320" height="240">
-          <ellipse cx="160" cy="205" rx="130" ry="14" fill="#00000014"/>
-          <rect x="35" y="182" width="250" height="20" rx="10" fill="#7A5230"/>
-          <rect x="35" y="182" width="250" height="6" rx="3" fill="#8F6339"/>
-          <ellipse cx="160" cy="148" rx="100" ry="58" fill="#D9A45C"/>
-          <path d="M60 148c0-30 22-52 50-58" fill="none" stroke="#A66A2E" stroke-width="3" stroke-linecap="round" opacity=".5"/>
-          <path d="M88 116c14-10 30-15 46-15s34 6 47 17" fill="none" stroke="#FBF3E4" stroke-width="5" stroke-linecap="round"/>
-          <path d="M75 133c18-9 37-13 58-13s41 5 58 15" fill="none" stroke="#FBF3E4" stroke-width="5" stroke-linecap="round"/>
-          <path d="M70 152c20-6 40-9 61-9s43 4 61 11" fill="none" stroke="#FBF3E4" stroke-width="5" stroke-linecap="round"/>
-          <g fill="#A66A2E">
-            <circle cx="120" cy="128" r="1.6"/><circle cx="140" cy="120" r="1.6"/><circle cx="165" cy="118" r="1.6"/>
-            <circle cx="190" cy="124" r="1.6"/><circle cx="205" cy="136" r="1.6"/><circle cx="110" cy="145" r="1.6"/>
-            <circle cx="215" cy="152" r="1.6"/><circle cx="130" cy="160" r="1.6"/><circle cx="180" cy="163" r="1.6"/>
-          </g>
-          <g fill="none" stroke="#EDE3D0" stroke-width="4" stroke-linecap="round" opacity=".7">
-            <path d="M120 84c-8-14 8-16 0-30"/>
-            <path d="M160 78c-8-14 8-16 0-30"/>
-            <path d="M200 84c-8-14 8-16 0-30"/>
-          </g>
-          <g transform="translate(255,120) rotate(18)">
-            <path d="M0 0v34" stroke="#8C6A3F" stroke-width="2" stroke-linecap="round"/>
-            <g fill="#C98A2C">
-              <path d="M0 6c-4.5-3.6-9.3-2-11 2.4 4.6 1.6 9.4.1 11-2.4z"/>
-              <path d="M0 6c4.5-3.6 9.3-2 11 2.4-4.6 1.6-9.4.1-11-2.4z"/>
-              <path d="M0 15c-4.5-3.6-9.3-2-11 2.4 4.6 1.6 9.4.1 11-2.4z"/>
-              <path d="M0 15c4.5-3.6 9.3-2 11 2.4-4.6 1.6-9.4.1-11-2.4z"/>
-            </g>
-          </g>
-        </svg>
+
+      <div class="board__foot">
+        <p class="board__hint" id="board-hint">Drag the blue marker, or focus it and use the arrow keys, to see what's left when you arrive.</p>
+        <button class="board__reset" id="board-reset" type="button" hidden>Back to now</button>
       </div>
+      <p class="visually-hidden" id="board-live" aria-live="polite"></p>
     </div>
+
+    <figure class="oven__photo">
+      <picture>
+        <source media="(max-width: 900px)" srcset="img/loaves-800.webp" width="800" height="450">
+        <img src="img/loaves.webp" width="1300" height="1408" alt="Two long rows of scored country loaves on the oven loader, waiting in front of the deck oven" fetchpriority="high">
+      </picture>
+    </figure>
   </section>
 
-  <!-- MENU -->
-  <section class="section" id="menu" aria-labelledby="menu-heading">
-    <div class="section-inner">
-      <p class="eyebrow eyebrow-center">What we bake</p>
-      <h2 id="menu-heading">The Menu</h2>
-      <p class="section-lede">Everything is baked fresh in-house starting at 4am. Menu changes slightly with the seasons &mdash; ask what&rsquo;s new at the counter.</p>
+  <section class="menu" id="menu" aria-labelledby="menu-title">
+    <div class="wrap menu__grid">
+      <div class="menu__intro">
+        <h2 class="h2" id="menu-title">What comes out of the oven</h2>
+        <p class="lede">Every dough is mixed the day before and baked here from 4:00 am. The times below are when each batch comes out, so you know what's warm. Sundays run about an hour later.</p>
+      </div>
+      <figure class="ph menu__crumb">
+        <img src="img/crumb.webp" width="900" height="1200" loading="lazy" alt="A country loaf torn in half, showing an open, glossy crumb">
+      </figure>
 
-      <div class="menu-grid">
-        <div class="menu-card">
-          <div class="menu-card-head">
-            <svg width="30" height="30" viewBox="0 0 48 48" aria-hidden="true"><use href="#icon-bread"></use></svg>
-            <h3>Breads</h3>
-          </div>
-          <ul class="menu-list">
-            <li><span>Country Sourdough</span><span class="dots" aria-hidden="true"></span><span class="price">$8.00</span></li>
-            <li><span>Honey Lavender Sourdough</span><span class="dots" aria-hidden="true"></span><span class="price">$9.50</span></li>
-            <li><span>Rye Batard</span><span class="dots" aria-hidden="true"></span><span class="price">$7.50</span></li>
-            <li><span>Seeded Multigrain Loaf</span><span class="dots" aria-hidden="true"></span><span class="price">$8.00</span></li>
-            <li><span>Baguette</span><span class="dots" aria-hidden="true"></span><span class="price">$4.50</span></li>
-            <li><span>Rotating Focaccia</span><span class="dots" aria-hidden="true"></span><span class="price">$9.00</span></li>
-          </ul>
+      <div class="menu__list">
+        <div class="menu__group">
+          <h3 class="h3">Bread</h3>
+          <dl class="items">
+            <div class="item"><dt>Country loaf</dt><dd class="item__p">$8.00</dd><dd class="item__d">Stone-milled Colorado wheat, a 36-hour cold ferment and a properly dark crust.</dd><dd class="item__w">Out at 6:30 and 11:00</dd></div>
+            <div class="item"><dt>Baguette</dt><dd class="item__p">$4.50</dd><dd class="item__d">Thin, crackly crust. Best eaten on the walk home.</dd><dd class="item__w">Out at 6:50</dd></div>
+            <div class="item"><dt>Rye bâtard</dt><dd class="item__p">$7.50</dd><dd class="item__d">Forty percent whole rye, with or without caraway. Keeps for days.</dd><dd class="item__w">Out at 8:30</dd></div>
+            <div class="item"><dt>Focaccia of the day</dt><dd class="item__p">$4.00 slice, $14 tray</dd><dd class="item__d">Olive oil, flaky salt and whatever the garden plot gave us this week.</dd><dd class="item__w">Out at 9:00</dd></div>
+            <div class="item"><dt>Honey lavender sourdough</dt><dd class="item__p">$9.50</dd><dd class="item__d">Wildflower honey from Wellington and a little lavender. Saturdays only.</dd><dd class="item__w">Out at 8:00 on Saturday</dd></div>
+          </dl>
         </div>
 
-        <div class="menu-card">
-          <div class="menu-card-head">
-            <svg width="30" height="30" viewBox="0 0 48 48" aria-hidden="true"><use href="#icon-croissant"></use></svg>
-            <h3>Pastries</h3>
-          </div>
-          <ul class="menu-list">
-            <li><span>Brown Butter Croissant</span><span class="dots" aria-hidden="true"></span><span class="price">$4.75</span></li>
-            <li><span>Cardamom Morning Bun</span><span class="dots" aria-hidden="true"></span><span class="price">$4.25</span></li>
-            <li><span>Rye Chocolate Babka Slice</span><span class="dots" aria-hidden="true"></span><span class="price">$5.50</span></li>
-            <li><span>Cinnamon Rye Twist</span><span class="dots" aria-hidden="true"></span><span class="price">$4.00</span></li>
-            <li><span>Ginger Molasses Cookie</span><span class="dots" aria-hidden="true"></span><span class="price">$3.00</span></li>
-            <li><span>Galette of the Day</span><span class="dots" aria-hidden="true"></span><span class="price">$6.50</span></li>
-          </ul>
+        <div class="menu__group">
+          <h3 class="h3">Pastry</h3>
+          <figure class="ph menu__croissant">
+            <img src="img/croissants.webp" width="1200" height="797" loading="lazy" alt="Croissants lined up on a steel sheet pan">
+            <figcaption>Croissants come out twice: 7:15 and 10:15.</figcaption>
+          </figure>
+          <dl class="items">
+            <div class="item"><dt>Brown butter croissant</dt><dd class="item__p">$4.75</dd><dd class="item__d">Three days of lamination with browned butter folded into the dough.</dd><dd class="item__w">Out at 7:15 and 10:15</dd></div>
+            <div class="item"><dt>Cardamom morning bun</dt><dd class="item__p">$4.25</dd><dd class="item__d">Croissant dough rolled with cardamom sugar and orange zest.</dd><dd class="item__w">Out at 7:40, usually gone by 9:30</dd></div>
+            <div class="item"><dt>Rye chocolate babka</dt><dd class="item__p">$5.50 slice</dd><dd class="item__d">Dark chocolate and a little rye flour for depth.</dd><dd class="item__w">Baked the night before</dd></div>
+            <div class="item"><dt>Ginger molasses cookie</dt><dd class="item__p">$3.00</dd><dd class="item__d">Chewy, dark and rolled in raw sugar.</dd><dd class="item__w">Out at 12:30</dd></div>
+          </dl>
         </div>
 
-        <div class="menu-card">
-          <div class="menu-card-head">
-            <svg width="30" height="30" viewBox="0 0 48 48" aria-hidden="true"><use href="#icon-coffee"></use></svg>
-            <h3>Coffee</h3>
-          </div>
-          <ul class="menu-list">
-            <li><span>Drip Coffee</span><span class="dots" aria-hidden="true"></span><span class="price">$3.00</span></li>
-            <li><span>Cortado</span><span class="dots" aria-hidden="true"></span><span class="price">$4.00</span></li>
-            <li><span>Oat Milk Latte</span><span class="dots" aria-hidden="true"></span><span class="price">$5.00</span></li>
-            <li><span>Cold Brew</span><span class="dots" aria-hidden="true"></span><span class="price">$4.50</span></li>
-            <li><span>Chai Latte</span><span class="dots" aria-hidden="true"></span><span class="price">$4.75</span></li>
-            <li><span>Drinking Chocolate</span><span class="dots" aria-hidden="true"></span><span class="price">$4.00</span></li>
-          </ul>
+        <div class="menu__group">
+          <h3 class="h3">Coffee</h3>
+          <dl class="items items--short">
+            <div class="item"><dt>Drip coffee</dt><dd class="item__p">$3.00</dd></div>
+            <div class="item"><dt>Cortado</dt><dd class="item__p">$4.00</dd></div>
+            <div class="item"><dt>Oat milk latte</dt><dd class="item__p">$5.00</dd></div>
+            <div class="item"><dt>Chai latte</dt><dd class="item__p">$4.75</dd></div>
+            <div class="item"><dt>Drinking chocolate</dt><dd class="item__p">$4.00</dd></div>
+          </dl>
+          <p class="note">Beans from a small roaster down the road, changed each season.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CUSTOM CAKES -->
-  <section class="section section-alt" id="cakes" aria-labelledby="cakes-heading">
-    <div class="section-inner cakes-inner">
-      <div class="cakes-copy">
-        <p class="eyebrow">Custom Orders</p>
-        <h2 id="cakes-heading">Custom Cakes, Made to Order</h2>
-        <p class="section-lede">From birthdays to weddings, we build cakes around your flavors and your headcount. Tell us the occasion and we&rsquo;ll follow up with a quote within two business days.</p>
-        <ul class="cakes-points">
-          <li><svg width="22" height="22" viewBox="0 0 48 48" aria-hidden="true"><use href="#icon-cake"></use></svg> Custom flavors, fillings, and dietary swaps</li>
-          <li><svg width="22" height="22" viewBox="0 0 48 48" aria-hidden="true"><use href="#icon-cake"></use></svg> Serves 8 to 150+ guests</li>
-          <li><svg width="22" height="22" viewBox="0 0 48 48" aria-hidden="true"><use href="#icon-cake"></use></svg> 2 weeks notice recommended, 72 hours minimum</li>
-        </ul>
+  <section class="story" id="about" aria-labelledby="story-title">
+    <div class="wrap story__grid">
+      <div class="story__text">
+        <h2 class="h2" id="story-title">Two bakers and a secondhand deck oven</h2>
+        <p>Mara Jansen and Theo Whitfield met on the line of a Denver restaurant kitchen and agreed on one thing: most bread is baked to last on a shelf, not to taste good the same morning.</p>
+        <p>In 2019 they opened Juniper &amp; Rye in a converted garage on Millstone Row with one spiral mixer, a secondhand deck oven and a sourdough starter called Clementine, who still does the heavy lifting.</p>
+        <p>Mara runs the bread: long cold ferments, stone-milled flour, nothing rushed. Theo does the laminated dough, the cakes and the coffee bar. The oven is lit at 4:00 every morning we're open.</p>
+        <blockquote class="quote">
+          <p>I plan my Saturday mornings around the nine o'clock focaccia.</p>
+          <footer>K.M., a regular since 2020 <span class="quote__tag">(sample review)</span></footer>
+        </blockquote>
+      </div>
+      <figure class="ph story__wide">
+        <img src="img/oven.webp" width="1300" height="731" loading="lazy" alt="A baker in a flat cap slides a peel into the deck oven while scored loaves wait in the foreground">
+        <figcaption>Loading the deck oven for the 6:30 bake.</figcaption>
+      </figure>
+      <figure class="ph story__tall story__tall--a">
+        <img src="img/flour.webp" width="800" height="1200" loading="lazy" alt="Flour falling from a baker's hand onto loaves resting on a linen couche">
+        <figcaption>Flour on the couche, just before 6:00.</figcaption>
+      </figure>
+      <figure class="ph story__tall story__tall--b">
+        <img src="img/focaccia.webp" width="800" height="1200" loading="lazy" alt="Two hands pressing dimples into oiled focaccia dough in a pan">
+        <figcaption>Dimpling the focaccia for the 9:00 bake.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="cakes" id="cakes" aria-labelledby="cakes-title">
+    <div class="wrap">
+      <div class="cakes__head">
+        <div class="cakes__intro">
+          <h2 class="h2" id="cakes-title">Custom cakes</h2>
+          <p class="lede">Pick a size, sponge, filling and finish. The drawing and the price change as you go; then send it to Theo. Order at least three days ahead, or two weeks for a two-tier cake.</p>
+        </div>
+        <figure class="ph cakes__photo">
+          <img src="img/cake.webp" width="1200" height="800" loading="lazy" alt="A naked vanilla layer cake topped with strawberries and small white flowers">
+        </figure>
       </div>
 
-      <form class="cake-form" id="cake-form" novalidate>
-        <h3 class="form-title">Request a Quote</h3>
-
-        <div class="form-row">
-          <label for="cf-name">Full name</label>
-          <input type="text" id="cf-name" name="name" autocomplete="name" required>
-          <p class="field-error" id="err-name" role="alert"></p>
-        </div>
-
-        <div class="form-row">
-          <label for="cf-email">Email</label>
-          <input type="email" id="cf-email" name="email" autocomplete="email" required>
-          <p class="field-error" id="err-email" role="alert"></p>
-        </div>
-
-        <div class="form-row">
-          <label for="cf-phone">Phone <span class="optional">(optional)</span></label>
-          <input type="tel" id="cf-phone" name="phone" autocomplete="tel">
-        </div>
-
-        <div class="form-row">
-          <label for="cf-date">Event date</label>
-          <input type="date" id="cf-date" name="date" required>
-          <p class="field-error" id="err-date" role="alert"></p>
-        </div>
-
-        <div class="form-row form-row-split">
-          <div>
-            <label for="cf-flavor">Flavor</label>
-            <select id="cf-flavor" name="flavor" required>
-              <option value="">Choose a flavor</option>
-              <option>Vanilla Bean</option>
-              <option>Chocolate Rye</option>
-              <option>Carrot Cardamom</option>
-              <option>Lemon Poppyseed</option>
-              <option>Honey Spice</option>
-              <option>Other / not sure yet</option>
-            </select>
-            <p class="field-error" id="err-flavor" role="alert"></p>
+      <form class="cakeform" id="cake-form" novalidate>
+        <div class="builder">
+          <div class="sheet" id="cake-sheet">
+            <svg id="cake-svg" viewBox="0 95 760 327" role="img" aria-labelledby="cake-svg-title">
+              <title id="cake-svg-title">Cross-section drawing of your cake</title>
+              <g id="cake-layers"></g>
+              <g id="cake-deco"></g>
+              <line x1="10" y1="352" x2="490" y2="352" stroke="#33241C" stroke-width="3"/>
+              <path d="M220 352 L205 382 H295 L280 352" fill="none" stroke="#33241C" stroke-width="3" stroke-linejoin="round"/>
+              <g id="cake-dim" font-family="Big Shoulders, sans-serif" font-size="26" font-weight="700" fill="#33241C">
+                <line id="dim-line" x1="70" y1="400" x2="430" y2="400" stroke="#33241C" stroke-width="1.5"/>
+                <line id="dim-l" x1="70" y1="392" x2="70" y2="408" stroke="#33241C" stroke-width="1.5"/>
+                <line id="dim-r" x1="430" y1="392" x2="430" y2="408" stroke="#33241C" stroke-width="1.5"/>
+                <rect id="dim-bg" x="220" y="386" width="60" height="28" fill="#ECECE8"/>
+                <text id="dim-text" x="250" y="409" text-anchor="middle">8 in</text>
+              </g>
+              <g id="cake-labels" font-family="Literata, serif" font-size="19" fill="#33241C"></g>
+            </svg>
+            <div class="sheet__foot">
+              <p class="sheet__price"><span class="visually-hidden">Estimated price: </span><span id="cake-price">$68</span></p>
+              <div class="sheet__info">
+                <p class="sheet__sum" id="cake-sum">8 in, serves 14 to 18. Vanilla bean sponge, raspberry jam, naked with seasonal fruit.</p>
+                <p class="sheet__ready" id="cake-ready">Earliest pickup: Thursday, October 1.</p>
+              </div>
+            </div>
           </div>
-          <div>
-            <label for="cf-size">Serves about</label>
-            <select id="cf-size" name="size" required>
-              <option value="">Choose a size</option>
-              <option>8&ndash;10 guests</option>
-              <option>12&ndash;16 guests</option>
-              <option>20&ndash;25 guests</option>
-              <option>30&ndash;40 guests</option>
-              <option>50+ guests</option>
-            </select>
-            <p class="field-error" id="err-size" role="alert"></p>
+
+          <div class="options">
+            <fieldset class="opt">
+              <legend>Size</legend>
+              <label><input type="radio" name="size" value="6" data-price="48"> <span>6 in <small>serves 8 to 10, $48</small></span></label>
+              <label><input type="radio" name="size" value="8" data-price="68" checked> <span>8 in <small>serves 14 to 18, $68</small></span></label>
+              <label><input type="radio" name="size" value="10" data-price="98"> <span>10 in <small>serves 24 to 30, $98</small></span></label>
+              <label><input type="radio" name="size" value="tier" data-price="185"> <span>Two tier <small>6 and 9 in, serves 40 to 50, $185</small></span></label>
+            </fieldset>
+            <fieldset class="opt">
+              <legend>Sponge</legend>
+              <label><input type="radio" name="sponge" value="vanilla" checked> <span>Vanilla bean</span></label>
+              <label><input type="radio" name="sponge" value="chocolate"> <span>Chocolate rye</span></label>
+              <label><input type="radio" name="sponge" value="carrot"> <span>Carrot cardamom</span></label>
+              <label><input type="radio" name="sponge" value="lemon"> <span>Lemon poppyseed</span></label>
+              <label><input type="radio" name="sponge" value="honey"> <span>Honey spice</span></label>
+            </fieldset>
+            <fieldset class="opt">
+              <legend>Filling</legend>
+              <label><input type="radio" name="filling" value="raspberry" checked> <span>Raspberry jam</span></label>
+              <label><input type="radio" name="filling" value="lemon"> <span>Lemon curd</span></label>
+              <label><input type="radio" name="filling" value="cream"> <span>Cream cheese</span></label>
+              <label><input type="radio" name="filling" value="caramel" data-price="6"> <span>Salted caramel <small>+$6</small></span></label>
+              <label><input type="radio" name="filling" value="ganache" data-price="6"> <span>Dark chocolate ganache <small>+$6</small></span></label>
+            </fieldset>
+            <fieldset class="opt">
+              <legend>Finish</legend>
+              <label><input type="radio" name="finish" value="naked" checked> <span>Naked, with seasonal fruit</span></label>
+              <label><input type="radio" name="finish" value="buttercream"> <span>Smooth buttercream</span></label>
+              <label><input type="radio" name="finish" value="drip" data-price="10"> <span>Chocolate drip <small>+$10</small></span></label>
+              <label><input type="radio" name="finish" value="juniper" data-price="8"> <span>Sugared juniper and rosemary <small>+$8</small></span></label>
+            </fieldset>
           </div>
         </div>
 
-        <div class="form-row">
-          <label for="cf-notes">Design notes <span class="optional">(optional)</span></label>
-          <textarea id="cf-notes" name="notes" rows="3" placeholder="Colors, theme, allergies, inspiration photos you have in mind..."></textarea>
+        <div class="request">
+          <div class="request__intro">
+            <h3 class="h3">Request this cake</h3>
+            <p>Theo checks the date and replies by email within two business days. Nothing is charged until you pick it up.</p>
+          </div>
+          <div class="request__fields">
+            <div class="field">
+              <label for="f-name">Your name</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="e-name">
+              <p class="field__err" id="e-name"></p>
+            </div>
+            <div class="field">
+              <label for="f-email">Email</label>
+              <input id="f-email" name="email" type="email" autocomplete="email" required aria-describedby="e-email">
+              <p class="field__err" id="e-email"></p>
+            </div>
+            <div class="field">
+              <label for="f-date">Pickup date</label>
+              <input id="f-date" name="date" type="date" required aria-describedby="h-date e-date">
+              <p class="field__help" id="h-date">At least three days out, or two weeks for two tiers. Closed Mondays.</p>
+              <p class="field__err" id="e-date"></p>
+            </div>
+            <div class="field field--wide">
+              <label for="f-notes">Writing on the cake, allergies, anything else <span class="opt-tag">(optional)</span></label>
+              <textarea id="f-notes" name="notes" rows="3"></textarea>
+            </div>
+            <button class="btn" type="submit">Request this cake</button>
+            <p class="done" id="cake-done" tabindex="-1" hidden></p>
+          </div>
         </div>
-
-        <button type="submit" class="btn btn-primary btn-lg form-submit">Request a Quote</button>
-        <p class="form-success" id="form-success" role="status" aria-live="polite" hidden>Thanks! (Demo site: nothing was sent.)</p>
       </form>
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section class="section" id="about" aria-labelledby="about-heading">
-    <div class="section-inner about-inner">
-      <div class="about-art" aria-hidden="true">
-        <svg viewBox="0 0 220 220" width="220" height="220">
-          <circle cx="110" cy="110" r="106" fill="#F3E7CF"/>
-          <circle cx="82" cy="96" r="34" fill="#E7B65C"/>
-          <path d="M52 100c0-20 14-34 30-34s30 14 30 34" fill="none" stroke="#8C6A3F" stroke-width="4"/>
-          <rect x="66" y="128" width="32" height="42" rx="14" fill="#2F4A3B"/>
-          <circle cx="146" cy="100" r="32" fill="#D9A45C"/>
-          <path d="M118 104c0-19 13-32 28-32s28 13 28 32" fill="none" stroke="#8C6A3F" stroke-width="4"/>
-          <rect x="130" y="130" width="32" height="40" rx="14" fill="#8C3A4B"/>
-          <path d="M60 150c14 8 32 8 50 8s36 0 50-8" fill="none" stroke="#C98A2C" stroke-width="3" stroke-linecap="round"/>
-        </svg>
-      </div>
-      <div class="about-copy">
-        <p class="eyebrow">Who&rsquo;s baking</p>
-        <h2 id="about-heading">About the Bakers</h2>
-        <p>Mara Jansen and Theo Whitfield met in a restaurant kitchen and bonded over a shared opinion: most bread is baked for shelf life, not flavor. In 2019 they opened Juniper &amp; Rye out of a converted garage on Mulberry Fields Lane with one mixer, a secondhand deck oven, and a sourdough starter named Clementine (still going strong).</p>
-        <p>Mara runs the ovens and keeps the bread program honest &mdash; long ferments, stone-milled flour, nothing rushed. Theo trained in pastry in Denver and handles cakes, laminated dough, and the coffee bar. Between them they&rsquo;ve got about 25 years of kitchen scars and one very opinionated cat who supervises from the front window.</p>
-      </div>
-    </div>
-  </section>
+  <section class="visit" id="visit" aria-labelledby="visit-title">
+    <div class="wrap visit__grid">
+      <div class="visit__text">
+        <h2 class="h2" id="visit-title">128 Millstone Row</h2>
+        <p class="addr">Fort Collins, CO 80521</p>
+        <p>On the corner of Rye Street, across from Juniper Park. Park in the lot behind the building, or on the street after 9:00.</p>
+        <p><a class="tel" href="tel:+19705550148">(970) 555-0148</a><br>Call before 9:00 and we'll hold a loaf with your name on it.</p>
 
-  <!-- TESTIMONIALS -->
-  <section class="section section-alt" id="testimonials" aria-labelledby="testi-heading">
-    <div class="section-inner">
-      <p class="eyebrow eyebrow-center">Kind words</p>
-      <h2 id="testi-heading">From the Neighborhood</h2>
-      <div class="testimonial-grid">
-        <figure class="testimonial-card">
-          <svg width="26" height="20" viewBox="0 0 32 24" aria-hidden="true"><use href="#icon-quote"></use></svg>
-          <blockquote>The sourdough is worth setting an alarm for. I've started ordering two loaves ahead just so I don't miss out.</blockquote>
-          <figcaption>Priya R. <span class="sample-tag">(sample)</span></figcaption>
-        </figure>
-        <figure class="testimonial-card">
-          <svg width="26" height="20" viewBox="0 0 32 24" aria-hidden="true"><use href="#icon-quote"></use></svg>
-          <blockquote>Our wedding cake tasted as good as it looked, and Theo talked us through every flavor option without any pressure.</blockquote>
-          <figcaption>Daniel &amp; Marcus <span class="sample-tag">(sample)</span></figcaption>
-        </figure>
-        <figure class="testimonial-card">
-          <svg width="26" height="20" viewBox="0 0 32 24" aria-hidden="true"><use href="#icon-quote"></use></svg>
-          <blockquote>Best oat milk latte in Fort Collins, hands down. The morning buns disappear fast, so get there early.</blockquote>
-          <figcaption>Lindsey T. <span class="sample-tag">(sample)</span></figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
+        <table class="hours" aria-label="Opening hours">
+          <tbody>
+            <tr data-days="2 3 4 5"><th scope="row">Tuesday to Friday</th><td>7:00 am to 3:00 pm</td></tr>
+            <tr data-days="6"><th scope="row">Saturday</th><td>7:00 am to 3:00 pm</td></tr>
+            <tr data-days="0"><th scope="row">Sunday</th><td>8:00 am to 1:00 pm</td></tr>
+            <tr data-days="1"><th scope="row">Monday</th><td>Closed</td></tr>
+          </tbody>
+        </table>
 
-  <!-- FAQ -->
-  <section class="section" id="faq" aria-labelledby="faq-heading">
-    <div class="section-inner faq-inner">
-      <p class="eyebrow eyebrow-center">Good to know</p>
-      <h2 id="faq-heading">Frequently Asked Questions</h2>
-      <div class="faq-list">
-        <details class="faq-item">
-          <summary>How far ahead should I order a custom cake?</summary>
-          <p>We recommend two weeks for weddings and larger events, and 72 hours minimum for birthday or small celebration cakes, depending on our schedule.</p>
-        </details>
-        <details class="faq-item">
-          <summary>Do you have gluten-free or vegan options?</summary>
-          <p>We offer a rotating gluten-free loaf on Saturdays and can adapt most cake flavors to be dairy-free or vegan with advance notice &mdash; just mention it in your cake request.</p>
-        </details>
-        <details class="faq-item">
-          <summary>Is there parking?</summary>
-          <p>Yes &mdash; a small lot behind the building off Rye Street, plus free street parking along Mulberry Fields Lane after 9am.</p>
-        </details>
-        <details class="faq-item">
-          <summary>Do you cater events?</summary>
-          <p>We do pastry boxes, bread baskets, and coffee service for events up to about 80 guests. Reach out at least a week ahead.</p>
-        </details>
-        <details class="faq-item">
-          <summary>Can I call ahead to reserve bread?</summary>
-          <p>Yes, please do &mdash; our specialty loaves sell out most mornings. Call (970) 555-0148 and we'll set a loaf aside with your name on it.</p>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <!-- HOURS & LOCATION -->
-  <section class="section section-alt" id="visit" aria-labelledby="visit-heading">
-    <div class="section-inner visit-inner">
-      <div class="visit-copy">
-        <p class="eyebrow">Hours &amp; Location</p>
-        <h2 id="visit-heading">Come Say Hello</h2>
-
-        <div class="visit-block">
-          <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-clock"></use></svg>
-          <div>
-            <p class="visit-label">Hours</p>
-            <p>Tuesday &ndash; Saturday: 7:00am &ndash; 3:00pm</p>
-            <p>Sunday: 8:00am &ndash; 1:00pm</p>
-            <p>Closed Monday</p>
-          </div>
-        </div>
-
-        <div class="visit-block">
-          <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-pin"></use></svg>
-          <div>
-            <p class="visit-label">Address</p>
-            <p>128 Millstone Row<br>Fort Collins, CO 80521</p>
-            <p class="visit-note">Corner of Mulberry Fields Lane &amp; Rye Street, across from Juniper Park.</p>
-          </div>
-        </div>
-
-        <div class="visit-block">
-          <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-phone"></use></svg>
-          <div>
-            <p class="visit-label">Phone</p>
-            <p><a href="tel:+19705550148">(970) 555-0148</a></p>
-          </div>
+        <div class="faq">
+          <details>
+            <summary>Do you have gluten-free bread?</summary>
+            <p>A buckwheat and oat loaf on Saturdays. It's baked in the same oven as everything else, so it isn't safe for celiac disease.</p>
+          </details>
+          <details>
+            <summary>Can cakes be dairy-free or vegan?</summary>
+            <p>Most sponges can. Mention it in your cake request and Theo will tell you which fillings work.</p>
+          </details>
+          <details>
+            <summary>Do you cater?</summary>
+            <p>Pastry boxes, bread baskets and coffee for up to about 80 people. Give us a week's notice.</p>
+          </details>
         </div>
       </div>
-
-      <div class="visit-map">
-        <svg viewBox="0 0 400 300" width="400" height="300" role="img" aria-labelledby="map-title map-desc">
-          <title id="map-title">Map to Juniper &amp; Rye Bakehouse</title>
-          <desc id="map-desc">Stylized map showing Juniper &amp; Rye Bakehouse at the corner of Mulberry Fields Lane and Rye Street in Fort Collins, Colorado, across from Juniper Park.</desc>
-          <rect width="400" height="300" fill="#F3E7CF"/>
-          <g stroke="#E4D3AE" stroke-width="1">
-            <path d="M0 60H400M0 120H400M0 180H400M0 240H400"/>
-            <path d="M60 0V300M140 0V300M220 0V300M300 0V300M360 0V300"/>
-          </g>
-          <rect x="16" y="16" width="120" height="80" rx="10" fill="#CFE0CC"/>
-          <circle cx="40" cy="46" r="10" fill="#7FA671"/>
-          <circle cx="60" cy="36" r="12" fill="#7FA671"/>
-          <circle cx="82" cy="48" r="10" fill="#7FA671"/>
-          <text x="46" y="82" font-family="Public Sans, sans-serif" font-size="12" fill="#4B5C41">Juniper Park</text>
-          <rect x="0" y="150" width="400" height="26" fill="#DDD3BF"/>
-          <rect x="185" y="0" width="26" height="300" fill="#DDD3BF"/>
-          <text x="215" y="145" font-family="Public Sans, sans-serif" font-size="12" fill="#6b5c47">Mulberry Fields Ln</text>
-          <text x="222" y="60" font-family="Public Sans, sans-serif" font-size="12" fill="#6b5c47" transform="rotate(90 222 60)">Rye Street</text>
-          <rect x="230" y="185" width="70" height="46" rx="6" fill="#fff" stroke="#C98A2C" stroke-width="2"/>
-          <text x="240" y="212" font-family="Public Sans, sans-serif" font-size="11" font-weight="700" fill="#2B2420">Juniper</text>
-          <text x="245" y="225" font-family="Public Sans, sans-serif" font-size="11" font-weight="700" fill="#2B2420">&amp; Rye</text>
-          <g transform="translate(255,150)">
-            <path d="M0 0c-8 0-14 6-14 14 0 11 14 22 14 22s14-11 14-22c0-8-6-14-14-14z" fill="#8C3A4B"/>
-            <circle cx="0" cy="13" r="6" fill="#FBF3E4"/>
-          </g>
-          <g transform="translate(356,26)">
-            <circle r="16" fill="#fff" stroke="#C98A2C" stroke-width="2"/>
-            <path d="M0 -9 L4 3 L0 0 L-4 3 Z" fill="#2F4A3B"/>
-            <text x="0" y="-19" text-anchor="middle" font-family="Public Sans, sans-serif" font-size="10" fill="#6b5c47">N</text>
-          </g>
-        </svg>
-      </div>
+      <figure class="ph visit__photo">
+        <img src="img/bag.webp" width="1200" height="800" loading="lazy" alt="A baguette, a boule and a roll inside a brown paper bag">
+      </figure>
     </div>
   </section>
-
 </main>
 
-<footer class="site-footer">
-  <div class="footer-inner">
-    <a class="brand brand-footer" href="#top">
-      <svg width="32" height="32" viewBox="0 0 40 40" aria-hidden="true"><use href="#icon-wheat"></use></svg>
-      <span class="brand-text">Juniper &amp; Rye<span class="brand-sub">Bakehouse</span></span>
-    </a>
-    <nav aria-label="Footer">
-      <ul class="footer-nav">
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#cakes">Custom Cakes</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#visit">Visit</a></li>
-      </ul>
-    </nav>
-    <p class="footer-contact">128 Millstone Row, Fort Collins, CO 80521 &middot; <a href="tel:+19705550148">(970) 555-0148</a></p>
-    <p class="footer-legal">Concept site by Barbed Wire Glove Games LLC - fictional business, portfolio sample.</p>
+<footer class="foot">
+  <div class="wrap foot__grid">
+    <p class="foot__name">Juniper &amp; Rye Bakehouse</p>
+    <p>128 Millstone Row, Fort Collins, CO 80521<br><a href="tel:+19705550148">(970) 555-0148</a></p>
+    <p>Tuesday to Saturday 7 to 3<br>Sunday 8 to 1, closed Monday</p>
+    <p class="foot__legal">Concept site by Barbed Wire Glove Games LLC - fictional business, portfolio sample. Photographs from Unsplash, credited in CREDITS.md.</p>
   </div>
 </footer>
 
-<div class="mobile-bar" id="mobile-bar">
-  <a class="btn btn-primary" href="tel:+19705550148">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-phone"></use></svg>
-    Call to Order
-  </a>
-  <a class="btn btn-ghost" href="#cakes">Custom Cakes</a>
+<div class="dock" aria-label="Quick actions">
+  <a class="dock__call" href="tel:+19705550148">Call to hold a loaf</a>
+  <a class="dock__cake" href="#cakes">Order a cake</a>
 </div>
 
-<script src="script.js"></script>
+<script src="vendor/gsap.min.js" defer></script>
+<script src="js/main.js" defer></script>
 </body>
 </html>

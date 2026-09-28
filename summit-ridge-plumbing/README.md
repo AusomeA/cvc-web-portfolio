@@ -1,36 +1,39 @@
-# Summit Ridge Plumbing & Heating (concept portfolio site)
+# Summit Ridge Plumbing & Heating (concept site, v2)
 
-A fictional 24/7 plumbing & heating company serving Loveland and Fort Collins, Colorado, built as a lead-generation
-landing page: hero with click-to-call, priced services grid, a free-quote form, service-area map, trust badges,
-sample reviews, and an FAQ, all backed by inline SVG illustration (no photos, no external assets).
+A one-page site for a fictional residential plumbing and heating company in Loveland and Fort Collins, Colorado, built around a "What's going on?" tool that turns a fixture and a symptom into a filled-in service ticket: likely cause, usual price, how urgent it is, what to do before the truck arrives, and one next step. It's styled like the company's truck and paperwork (spruce door panel, hot and cold PEX stripe, canary work-order copy) and is readable at a glance on a phone mid-emergency.
 
-Concept site by Barbed Wire Glove Games LLC — fictional business, portfolio sample.
+Concept site by Barbed Wire Glove Games LLC - fictional business, portfolio sample.
 
 ## Palette
-- Navy `#0A2647` (primary / headings / dark sections)
-- Navy dark `#061A33` (footer / gradients)
-- Safety orange `#FF6600` (accent, badges, icon fills)
-- Deep orange `#B84A00` (CTA buttons, links — tuned for 4.5:1+ contrast with white text)
-- Ice `#F4F7FB` (alternating section background)
+| Name | Hex | Use |
+|---|---|---|
+| Spruce livery | `#163F3A` | Hero panel, headings, book buttons, footer (`#0F2E2A`) |
+| Hot line red | `#C4291F` | Only "call now": phone buttons, urgent tickets |
+| Cold line blue | `#1C5AA3` | "Can wait" urgency, edge-of-area, focus rings |
+| Ticket canary | `#FCEFA8` | The diagnosis ticket and the booking carry-over note |
+| Galvanized | `#E5E9E6` | Panel backgrounds |
+| Ink / muted | `#1C2A27` / `#51605B` | Text |
 
 ## Fonts
-- "Archivo Black" — display headings (Google Fonts)
-- "Barlow" (400/500/600/700/800) — body copy and UI (Google Fonts)
+- Mona Sans (variable, wdth 75-125, wght 400-900), self-hosted woff2 in `fonts/`. Expanded heavy for the livery
+  display type (headlines, prices, phone numbers), normal width for text, semi-condensed for ticket field labels.
 
 ## Sections
-1. Sticky header — logo mark, nav, click-to-call
-2. Hero — 24/7 emergency badge, H1, dual CTAs (call / free quote), trust strip, inline-SVG house illustration
-3. Services grid — 8 services with inline SVG icons and starting prices
-4. Get a Free Quote form — name, phone, service, message; JS-validated, demo-only submit with inline success message
-5. Service area — town list + stylized inline-SVG map (Loveland, Fort Collins, Windsor, Berthoud, Timnath)
-6. Trust badges — licensed & insured, upfront pricing, satisfaction guarantee (marked sample)
-7. Reviews — 3 sample testimonials, clearly marked "(sample)"
-8. FAQ — 5 questions using native `<details>`/`<summary>` accordion
-9. CTA banner — final call/quote push
-10. Footer — contact, hours, sitemap links, license line (sample), required concept-site line
-11. Sticky mobile call bar — fixed Call Now / Free Quote buttons, hidden ≥760px
+1. Sticky header with the 24/7 emergency number (menu button below 1080px)
+2. Hero: spruce panel, headline, call and diagnose buttons, live office-open status from the visitor's clock, photo, hot/cold stripe that draws in on load
+3. What's going on? (signature): six fixtures, 24 symptoms, a canary service ticket with cause, price range, a three-step urgency scale and next step; urgent picks turn the ticket red with the phone number at display size; gas smell tells people to get out first; "Book" carries the problem into the booking form
+4. What it usually costs: rate sheet with dotted leaders and a weekday / after-hours toggle (+$95 flat, weekday-only jobs marked)
+5. How a visit goes: four real steps beside a crawlspace photo
+6. Do we cover your place?: town or ZIP check with covered / edge / outside answers and a schematic route map that highlights the match
+7. Before the first hard freeze: seasonal winterizing offer
+8. Reviews (three samples, initials only)
+9. Book a visit: validated demo form, inline confirmation, nothing sent
+10. Footer with the concept-site line; sticky Call / Book bar on phones, tucked away while the hero buttons are visible
 
-## Notes / shortcuts
-- All contact details (phone, address, email, license #) are fabricated per the brief (555 number, "123 Example St").
-- Form is demo-only: validates client-side, calls `preventDefault()`, shows "Thanks! (Demo site: nothing was sent.)", never transmits data.
-- `meta name="robots" content="noindex, nofollow"` added since this is a non-published portfolio sample, not a live business.
+## Libraries
+None. Plain HTML, CSS and vanilla JS (about 30 KB unminified). Motion is CSS keyframes and transitions; everything
+respects `prefers-reduced-motion`.
+
+## Files
+`index.html`, `css/site.css`, `js/site.js`, `fonts/`, `img/` (WebP, plus `og-image.jpg` for link previews),
+`DESIGN.md` (plan and critique notes), `CREDITS.md` (photo sources).

@@ -1,17 +1,26 @@
-# Ironwood Strength Co. — concept portfolio site
+# Ironwood Strength Co. (concept site)
 
-A fictional strength & conditioning gym in Greeley, Colorado, built as an Upwork portfolio
-sample: dark, athletic, energetic branding with inline-SVG illustration throughout
-(barbells, kettlebells, coach avatars, abstract mountain skyline) and no photos.
+A one-page site for a fictional barbell gym in Greeley, Colorado, built as an Upwork portfolio sample.
+Its signature is a working plate loader: type a weight and the competition-colored plates slide onto a
+to-scale bar resting on a lifting platform, with the per-side list and warm-up jumps worked out for you.
 
-**Palette:** Charcoal `#121316` / `#191b20` / `#1e2025` backgrounds, off-white `#f4f3ee` text,
-muted gray `#aeb2b9`, single vivid accent `#ff2d3d` (with `#d81f2d` hover/dark variant).
+**Palette** (materials, see DESIGN.md): chalk `#ECEDE9`, chalk bright `#F8F8F6`, graphite `#1C2325`,
+rubber `#152A2D`, platform wood `#C9A46C`, and the plate colors, used only as information: red `#D0262D`,
+blue `#1F5BB0`, yellow `#F1C232`, green `#277D43`, white `#F2F2EF`, steel `#A7AFB3`.
 
-**Fonts (Google Fonts):** "Bebas Neue" (condensed display headings) + "Work Sans" (body/UI).
+**Fonts:** Archivo variable (self-hosted, latin subset), using its width axis: extra condensed for
+headlines, normal width for text, expanded for small labels.
 
-**Sections:** sticky header + mobile nav toggle, hero with "First class free" CTA, class
-types grid (6 classes), weekly class schedule with a vanilla-JS day switcher (Mon–Sun),
-membership pricing (3 tiers: Drop-In, Core, All-Access), coach bios with inline-SVG
-illustrated avatars (3 coaches), free-trial signup form (JS-validated, demo-only submit),
-member testimonials (3, marked "(sample)"), FAQ accordion, location & hours (fake address /
-555 number), footer with required concept-site line, and a mobile sticky call/book bar.
+**Sections:** header with phone and booking button; hero (headline, photo, live "next class" line)
+joined to the plate loader platform; what we coach (six classes, color-keyed to the schedule); this
+week's classes (filters by class, time of day and beginner-friendly, day tabs on phones, live "next up"
+in Mountain Time, every session books into the form); membership price board; coaches; free-class
+section with the first-visit steps, member quotes and the demo booking form; questions; visit with a
+live open/closed line and hours; footer; sticky call/book bar on phones.
+
+**Libraries:** GSAP 3.15 core only (`vendor/gsap.min.js`, used for the plate, collar and bar
+animations). No framework, no build step. The page works without GSAP (plates just appear) and
+respects `prefers-reduced-motion`.
+
+**Files:** `index.html`, `css/site.css`, `js/site.js`, `vendor/`, `fonts/`, `img/` (WebP),
+`DESIGN.md` (design plan), `CREDITS.md`, `shots/` (QA screenshots).
