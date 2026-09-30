@@ -14,7 +14,8 @@ Hand-written HTML, CSS and JavaScript with no frameworks or build step (GSAP for
 Unsplash and Pexels under their free licenses; see each site's CREDITS.md. The businesses, people, addresses and
 555 phone numbers are made up.
 
-The hub page (index.html) opens with a playable pocket version of Trigonix, the studio's puzzle game, runs the three
-sample sites live in laptop and phone frames, and lists the studio's shipped products.
+The hub page (index.html) opens with the three sample sites running live in a laptop or phone frame, shows the tool
+each one is built around on a phone, lets visitors pick their own kind of business to see the tool I'd build, and
+lists the studio's shipped products.
 
 Live: https://ausomea.github.io/cvc-web-portfolio/

@@ -4,16 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Websites for small businesses | Barbed Wire Glove Games LLC</title>
-<meta name="description" content="Small-business websites from a one-person game studio in Colorado. Play a Trigonix board, try three working sample sites, and see the game, app and plugin I've shipped.">
+<meta name="description" content="Small-business websites from a one-person studio in Colorado. Try three working sample sites right on the page, see the customer tool each one is built around, and the game, app and plugin I've shipped.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Websites for small businesses | Barbed Wire Glove Games LLC">
-<meta property="og:description" content="Small-business websites from a game developer. Play a Trigonix board, then try three working sample sites.">
+<meta property="og:description" content="Small-business websites from a game developer. Try three working sample sites, each built around one tool its customers use.">
 <meta property="og:url" content="https://ausomea.github.io/cvc-web-portfolio/">
 <meta property="og:image" content="https://ausomea.github.io/cvc-web-portfolio/hub-assets/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#FFCC3D">
+<meta name="theme-color" content="#9FE4D8">
 <link rel="icon" href="hub-assets/mark.svg" type="image/svg+xml">
 <link rel="stylesheet" href="hub.css">
 <script type="application/ld+json">
@@ -21,7 +21,7 @@
 </script>
 </head>
 <body>
-<a class="skip" href="#samples">Skip to the sample sites</a>
+<a class="skip" href="#viewer">Skip to the sample sites</a>
 
 <header class="top">
   <div class="wrap top__in">
@@ -36,180 +36,187 @@
       <span class="brand__name">Barbed Wire Glove Games</span>
     </a>
     <nav class="top__nav" aria-label="On this page">
-      <a href="#samples">Sample sites</a>
-      <a href="#shipped">Shipped work</a>
+      <a href="#tools">Sample sites</a>
       <a href="#yours">Your site</a>
+      <a href="#shipped">Shipped work</a>
     </nav>
     <a class="btn btn--ink top__cta" href="https://www.upwork.com/freelancers/~01876c95155d01cd67">Hire me on Upwork</a>
   </div>
 </header>
 
 <main id="main">
-  <section class="intro" aria-labelledby="intro-title">
-   <div class="wrap intro__in">
-    <div class="intro__title">
+  <section class="intro" id="sites" aria-labelledby="intro-title">
+    <div class="wrap intro__head">
       <h1 id="intro-title">Small‑business websites from a game developer.</h1>
-      <p class="lead">I build each site around the question your customers ask first: when to come in, what the repair will cost, which plates go on the bar. The samples below answer it with a working tool.</p>
+      <p class="lead">I build each site around the question your customers ask first. Three samples are running below: pick one, switch between laptop and phone, and use it.</p>
     </div>
 
-    <div class="play" id="play" role="region" aria-labelledby="play-title">
-      <div class="play__head">
-        <h2 class="play__title" id="play-title">Make each square one color.</h2>
-        <p class="play__how">Tap a pin to turn the triangles around it.</p>
+    <div class="wrap viewer" id="viewer">
+      <div class="viewer__tabs" role="tablist" aria-label="Sample sites">
+        <button class="tab" role="tab" type="button" id="tab-jr" data-site="jr" aria-controls="viewer-panel" aria-selected="true"><span class="tab__kind">Bakery</span> <span class="tab__name">Juniper &amp; Rye</span></button>
+        <button class="tab" role="tab" type="button" id="tab-sr" data-site="sr" aria-controls="viewer-panel" aria-selected="false" tabindex="-1"><span class="tab__kind">Plumber</span> <span class="tab__name">Summit Ridge</span></button>
+        <button class="tab" role="tab" type="button" id="tab-iw" data-site="iw" aria-controls="viewer-panel" aria-selected="false" tabindex="-1"><span class="tab__kind">Gym</span> <span class="tab__name">Ironwood<span class="tab__more"> Strength</span></span></button>
       </div>
-      <div class="board" id="board">
-        <svg class="board__svg" viewBox="-8 -8 416 216" aria-hidden="true" focusable="false"></svg>
-        <div class="board__pins" role="group" aria-label="Pins on the board. Arrow keys move between pins, Enter turns one." aria-describedby="play-how-sr"></div>
-        <p class="sr-only" id="play-how-sr">Each pin turns the triangles around it a quarter turn clockwise. The board has two squares; the goal is to make each square a single color.</p>
-      </div>
-      <div class="play__bar">
-        <p class="play__status"><span class="play__level" id="play-level">Board 1 of 3</span> <span id="play-msg">Watch the first move.</span></p>
-        <p class="play__taps" id="play-taps">0 taps</p>
-        <div class="play__btns">
-          <button class="btn btn--line btn--sm" type="button" id="play-hint">Hint</button>
-          <button class="btn btn--line btn--sm" type="button" id="play-reset">Start over</button>
-          <button class="btn btn--ink btn--sm" type="button" id="play-next" hidden>Next board</button>
+
+      <div class="viewer__panel" id="viewer-panel" role="tabpanel" aria-labelledby="tab-jr" data-site="jr">
+        <p class="viewer__q" id="viewer-q">“When should I come in?”</p>
+        <div class="viewer__info">
+          <h2 class="viewer__name" id="viewer-name">Juniper &amp; Rye Bakehouse</h2>
+          <p class="viewer__about" id="viewer-about">A sourdough bakery in Fort Collins, Colorado. Fictional business, finished working site.</p>
+        </div>
+        <div class="viewer__more">
+          <p class="viewer__try" id="viewer-try">Drag the time marker on the oven schedule to see what will be out of the oven when you arrive. Further down, build a cake and watch the price change.</p>
+          <div class="viewer__controls">
+            <div class="seg" role="group" aria-label="Screen size">
+              <button type="button" data-mode="laptop" aria-pressed="true">Laptop</button>
+              <button type="button" data-mode="phone" aria-pressed="false">Phone</button>
+            </div>
+            <a class="textlink" id="viewer-open" href="juniper-rye-bakehouse/index.html">Open the full site</a>
+          </div>
+        </div>
+
+        <div class="stage" id="stage" data-mode="laptop">
+          <div class="device" id="device">
+            <div class="device__screen" id="screen">
+              <picture>
+                <source id="poster-phone" media="(max-width: 759px)" srcset="hub-assets/juniper-rye-bakehouse-phone.webp" width="390" height="844">
+                <img class="device__poster" id="poster" src="hub-assets/juniper-rye-bakehouse-desktop.webp" width="1440" height="900" fetchpriority="high" decoding="async" alt="The Juniper &amp; Rye Bakehouse home page: the shop sign over a steel-grey panel listing today’s bakes by the time they come out of the oven.">
+              </picture>
+              <button class="device__use" type="button" id="use-live"><span>Use the live site here</span></button>
+            </div>
+          </div>
         </div>
       </div>
-      <p class="sr-only" id="play-live" aria-live="polite"></p>
-      <p class="play__credit">A pocket version of <strong>Trigonix</strong>, my color puzzle game. The full game is on <a href="https://play.google.com/store/apps/details?id=com.BWGGames.Trigonix">Google Play</a> and the <a href="https://apps.apple.com/app/id6757233558">App Store</a>.</p>
+      <noscript><p class="viewer__noscript">Open the sites directly: <a href="juniper-rye-bakehouse/index.html">Juniper &amp; Rye Bakehouse</a>, <a href="summit-ridge-plumbing/index.html">Summit Ridge Plumbing &amp; Heating</a>, <a href="ironwood-strength/index.html">Ironwood Strength Co.</a></p></noscript>
     </div>
-
-    <div class="intro__more">
-      <p>Barbed Wire Glove Games is my one-person studio in Colorado. I build every site by hand with AI-assisted tools, and I test it myself on phones and desktop before you see it.</p>
-      <p class="intro__actions">
-        <a class="btn btn--ink" href="https://www.upwork.com/freelancers/~01876c95155d01cd67">Hire me on Upwork</a>
-        <a class="textlink" href="#samples">Try the sample sites</a>
-      </p>
-    </div>
-   </div>
   </section>
 
-<section class="samples" id="samples" aria-labelledby="samples-title">
-  <div class="wrap samples__head">
-    <h2 id="samples-title">Three sample sites. Try them right here.</h2>
-    <p>Each one is built around the question its customers ask first, with a working tool that answers it. The businesses are made up; the sites are finished and working.</p>
-  </div>
-
-  <div class="wrap viewer" id="viewer">
-    <div class="viewer__tabs" role="tablist" aria-label="Sample sites">
-      <button class="tab" role="tab" type="button" id="tab-jr" data-site="jr" aria-controls="viewer-panel" aria-selected="true"><span class="tab__kind">Bakery</span> <span class="tab__name">Juniper &amp; Rye</span></button>
-      <button class="tab" role="tab" type="button" id="tab-sr" data-site="sr" aria-controls="viewer-panel" aria-selected="false" tabindex="-1"><span class="tab__kind">Plumber</span> <span class="tab__name">Summit Ridge</span></button>
-      <button class="tab" role="tab" type="button" id="tab-iw" data-site="iw" aria-controls="viewer-panel" aria-selected="false" tabindex="-1"><span class="tab__kind">Gym</span> <span class="tab__name">Ironwood<span class="tab__more"> Strength</span></span></button>
-    </div>
-
-    <div class="viewer__panel" id="viewer-panel" role="tabpanel" aria-labelledby="tab-jr" data-site="jr">
-      <div class="viewer__info">
-        <p class="viewer__q" id="viewer-q">“When should I come in?”</p>
-        <h3 class="viewer__name" id="viewer-name">Juniper &amp; Rye Bakehouse</h3>
-        <p class="viewer__about" id="viewer-about">A sourdough bakery in Fort Collins, Colorado. Fictional business, finished working site.</p>
+  <section class="tools" id="tools" aria-labelledby="tools-title">
+    <div class="wrap">
+      <div class="tools__head">
+        <h2 id="tools-title">Each site is built around one tool.</h2>
+        <p>It answers the question that business hears most. Here is each tool on a phone, mid-use. The businesses are made up; the sites are finished and working.</p>
       </div>
-      <div class="viewer__more">
-        <p class="viewer__try" id="viewer-try">Drag the time marker on the oven schedule to see what will be out of the oven when you arrive. Further down, build a cake and watch the price change.</p>
-        <div class="viewer__controls">
-          <div class="seg" role="group" aria-label="Screen size">
-            <button type="button" data-mode="laptop" aria-pressed="true">Laptop</button>
-            <button type="button" data-mode="phone" aria-pressed="false">Phone</button>
-          </div>
-          <a class="textlink" id="viewer-open" href="juniper-rye-bakehouse/index.html">Open the full site</a>
+
+      <div class="tools__list">
+        <article class="tool" data-site="jr" aria-labelledby="t-jr">
+          <img class="tool__shot" src="hub-assets/tool-juniper-rye-oven.webp" width="780" height="1200" loading="lazy" decoding="async" alt="The Juniper &amp; Rye oven schedule on a phone at 7:22 on a Wednesday: “Morning buns come out at 7:40”, with country loaves, baguettes and croissants on the shelf and a time marker between 7:15 and 7:40.">
+          <h3 id="t-jr">Oven schedule</h3>
+          <p class="tool__site">Juniper &amp; Rye Bakehouse, a sourdough bakery</p>
+          <p>Shows what’s on the shelf, what’s in the oven and when the next bake comes out, set by the visitor’s own clock. Drag the marker to see what will be left when you get there.</p>
+          <p class="tool__also">Also on the site: a custom-cake builder that prices the cake as you choose, the menu, and a visit section.</p>
+          <a class="textlink" href="juniper-rye-bakehouse/index.html#oven">Try the oven schedule</a>
+        </article>
+
+        <article class="tool" data-site="sr" aria-labelledby="t-sr">
+          <img class="tool__shot" src="hub-assets/tool-summit-ridge-ticket.webp" width="780" height="1200" loading="lazy" decoding="async" alt="The Summit Ridge service ticket on a phone for a water heater with no hot water: the likely cause, a usual cost of $150 to $450, “today or tomorrow” for how soon, and what to check before the plumber arrives.">
+          <h3 id="t-sr">Problem-to-price ticket</h3>
+          <p class="tool__site">Summit Ridge Plumbing &amp; Heating</p>
+          <p>Customers pick what’s acting up and what it’s doing, and a service ticket fills in the likely cause, the usual price and how soon it needs a plumber. Emergencies get the phone number first.</p>
+          <p class="tool__also">Also on the site: a rate sheet, a check for which towns they cover, and a booking form.</p>
+          <a class="textlink" href="summit-ridge-plumbing/index.html#diagnose">Try the diagnosis</a>
+        </article>
+
+        <article class="tool" data-site="iw" aria-labelledby="t-iw">
+          <img class="tool__shot" src="hub-assets/tool-ironwood-loader.webp" width="780" height="1200" loading="lazy" decoding="async" alt="The Ironwood plate loader on a phone set to 142.5 kg: two red 25 kg plates, then smaller plates and a collar on the end of the bar.">
+          <h3 id="t-iw">Plate loader</h3>
+          <p class="tool__site">Ironwood Strength Co., a barbell gym</p>
+          <p>Type a weight and the right competition plates load onto the bar, heaviest first, in kilograms or pounds, with warm-up jumps worked out.</p>
+          <p class="tool__also">Also on the site: a weekly class schedule that counts down to the next class, and a free-class booking.</p>
+          <a class="textlink" href="ironwood-strength/index.html#loader">Try the plate loader</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="yours" id="yours" aria-labelledby="yours-title">
+    <div class="wrap yours__in">
+      <div class="yours__pick">
+        <h2 id="yours-title">What would your site do?</h2>
+        <p>Pick your kind of business to see the question its customers ask first, and the tool I’d build to answer it.</p>
+        <div class="picks" id="picks" role="radiogroup" aria-label="Your kind of business"></div>
+      </div>
+
+      <div class="answer" id="answer">
+        <div class="answer__swap" id="answer-swap" aria-live="polite">
+          <p class="answer__who" id="answer-who">A bakery’s customers ask first:</p>
+          <p class="answer__q" id="answer-q">“What’s fresh right now?”</p>
+          <p class="answer__tool" id="answer-tool">I’d answer it with <strong>a live bake board</strong>: what comes out of the oven today and when, set by each visitor’s own clock, with the things that usually sell out marked.</p>
+          <p class="answer__sample" id="answer-sample"><a class="textlink textlink--light" href="#viewer" data-site="jr">See one working: the Juniper &amp; Rye oven schedule</a></p>
+        </div>
+        <div class="answer__hire">
+          <a class="btn btn--glass" href="https://www.upwork.com/freelancers/~01876c95155d01cd67">Hire me on Upwork</a>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="stage" id="stage" data-mode="laptop">
-        <div class="device" id="device">
-          <div class="device__screen" id="screen">
-            <img class="device__poster" id="poster" src="hub-assets/juniper-rye-bakehouse-desktop.webp" width="1440" height="900" loading="lazy" decoding="async" alt="The Juniper &amp; Rye Bakehouse home page: the shop sign over a steel-grey panel listing today’s bakes by the time they come out of the oven.">
-            <button class="device__use" type="button" id="use-live"><span>Use the live site here</span></button>
+  <section class="shipped" id="shipped" aria-labelledby="shipped-title">
+    <div class="wrap">
+      <div class="shipped__head">
+        <h2 id="shipped-title">Things I’ve shipped</h2>
+        <p>The sample sites are concepts. These are my studio’s own products, out in the stores now.</p>
+      </div>
+
+      <div class="works">
+        <article class="work" aria-labelledby="w-trigonix">
+          <div class="work__tray work__tray--three">
+            <img src="hub-assets/trigonix-one-color.webp" width="420" height="747" loading="lazy" decoding="async" alt="Trigonix store screenshot: a four-color board of triangles with white pins, captioned “Fill every square with one color”.">
+            <img src="hub-assets/trigonix-two-colors.webp" width="420" height="747" loading="lazy" decoding="async" alt="Trigonix store screenshot: a red and blue board, captioned “Starts with 2 colors. Ends with 12.”">
+            <img src="hub-assets/trigonix-time-trial.webp" width="420" height="747" loading="lazy" decoding="async" alt="Trigonix store screenshot: a stepped six-color board with a countdown timer, captioned “Race the clock in Time Trial”.">
           </div>
-        </div>
-      </div>
-    </div>
-    <noscript><p class="viewer__noscript">Open the sites directly: <a href="juniper-rye-bakehouse/index.html">Juniper &amp; Rye Bakehouse</a>, <a href="summit-ridge-plumbing/index.html">Summit Ridge Plumbing &amp; Heating</a>, <a href="ironwood-strength/index.html">Ironwood Strength Co.</a></p></noscript>
-  </div>
-</section>
+          <h3 id="w-trigonix">Trigonix</h3>
+          <p class="work__kind">Color logic puzzle game for Android and iOS, built in Unreal Engine</p>
+          <p>Fill the board with one color, starting with 2 colors and working up to 12. Casual, Time Trial, Challenge and Multiplayer modes, 48 unlockable colors, metals and animated patterns, and in-app purchases.</p>
+          <p class="work__role">My role: developer and publisher.</p>
+          <p class="work__links">
+            <a class="textlink textlink--light" href="https://play.google.com/store/apps/details?id=com.BWGGames.Trigonix">Google Play</a>
+            <a class="textlink textlink--light" href="https://apps.apple.com/app/id6757233558">App Store</a>
+          </p>
+        </article>
 
-<section class="shipped" id="shipped" aria-labelledby="shipped-title">
-  <div class="wrap">
-    <div class="shipped__head">
-      <h2 id="shipped-title">Things I’ve shipped</h2>
-      <p>The sample sites are concepts. These are my studio’s own products, out in the stores now.</p>
-    </div>
-
-    <article class="work work--trigonix" aria-labelledby="w-trigonix">
-      <div class="work__phones">
-        <img src="hub-assets/trigonix-one-color.webp" width="420" height="747" loading="lazy" decoding="async" alt="Trigonix store screenshot: a four-color board of triangles with white pins, captioned “Fill every square with one color”.">
-        <img src="hub-assets/trigonix-two-colors.webp" width="420" height="747" loading="lazy" decoding="async" alt="Trigonix store screenshot: a red and blue board, captioned “Starts with 2 colors. Ends with 12.”">
-        <img src="hub-assets/trigonix-time-trial.webp" width="420" height="747" loading="lazy" decoding="async" alt="Trigonix store screenshot: a stepped six-color board with a countdown timer, captioned “Race the clock in Time Trial”.">
-      </div>
-      <div class="work__text">
-        <h3 id="w-trigonix">Trigonix</h3>
-        <p class="work__kind">Color logic puzzle game for Android and iOS, built in Unreal Engine</p>
-        <p>I designed and built it, and I publish it. Players fill the board with one color, starting with 2 colors and working up to 12. It has Casual, Time Trial, Challenge and Multiplayer modes, 48 unlockable colors, metals and animated patterns, and in-app purchases.</p>
-        <p class="work__role">My role: developer and publisher.</p>
-        <p class="work__links">
-          <a class="btn btn--sun" href="https://play.google.com/store/apps/details?id=com.BWGGames.Trigonix">Trigonix on Google Play</a>
-          <a class="btn btn--line-light" href="https://apps.apple.com/app/id6757233558">On the App Store</a>
-        </p>
-      </div>
-    </article>
-
-    <div class="work-pair">
-      <article class="work work--poolkit" aria-labelledby="w-poolkit">
-        <img class="work__shot" src="hub-assets/poolkit.webp" width="1200" height="675" loading="lazy" decoding="async" alt="PoolKit cover: hundreds of pooled projectiles flying over a test level, with its feature list and a live pool table in the corner.">
-        <div class="work__text">
+        <article class="work" aria-labelledby="w-poolkit">
+          <div class="work__tray work__tray--cover">
+            <img class="work__cover" src="hub-assets/poolkit.webp" width="1200" height="675" loading="lazy" decoding="async" alt="PoolKit cover: hundreds of pooled projectiles flying over a test level, with its feature list and a live pool table in the corner.">
+          </div>
           <h3 id="w-poolkit">PoolKit</h3>
           <p class="work__kind">Performance plugin for Unreal Engine 5, in C++</p>
-          <p>A plugin for Unreal Engine 5.4 to 5.7 that reuses actors, widgets, sounds, Niagara effects, decals and meshes instead of spawning new ones. It works with no setup, sizes its pools automatically from real play, shows live graphs in a debugger window, supports multiplayer and has 27 automated tests. In the demo benchmark it cut game-thread time for projectiles by 6.1x.</p>
+          <p>Reuses actors, widgets, sounds, Niagara effects, decals and meshes instead of spawning new ones, sizes its pools from real play, and has 27 automated tests. In the demo benchmark it cut game-thread time for projectiles by 6.1x.</p>
           <p class="work__role">My role: product owner and publisher (AI-assisted development).</p>
           <p class="work__links"><a class="textlink textlink--light" href="https://barbed-wire-glove-games.itch.io/poolkit">PoolKit on itch.io</a></p>
-        </div>
-      </article>
+        </article>
 
-      <article class="work work--chord" aria-labelledby="w-chord">
-        <div class="work__phones work__phones--two">
-          <img src="hub-assets/chord-scribe-drag.webp" width="420" height="747" loading="lazy" decoding="async" alt="Chord Scribe screenshot: chord buttons in the key of G above a chart where chords sit on the words of a song.">
-          <img src="hub-assets/chord-scribe-lyrics.webp" width="420" height="747" loading="lazy" decoding="async" alt="Chord Scribe screenshot: pasted lyrics split into verse and chorus sections, ready for chords.">
-        </div>
-        <div class="work__text">
+        <article class="work" aria-labelledby="w-chord">
+          <div class="work__tray work__tray--two">
+            <img src="hub-assets/chord-scribe-drag.webp" width="420" height="747" loading="lazy" decoding="async" alt="Chord Scribe screenshot: chord buttons in the key of G above a chart where chords sit on the words of a song.">
+            <img src="hub-assets/chord-scribe-lyrics.webp" width="420" height="747" loading="lazy" decoding="async" alt="Chord Scribe screenshot: pasted lyrics split into verse and chorus sections, ready for chords.">
+          </div>
           <h3 id="w-chord">Chord Scribe</h3>
           <p class="work__kind">Chord chart app for musicians, on Android</p>
-          <p>Turns song lyrics into clean chord charts. Musicians drag chords onto words, change the key and capo, switch to Nashville numbers, view chord diagrams, add custom chords and section labels, and export to PDF. Published on Google Play by my studio, with a Pro subscription.</p>
+          <p>Turns song lyrics into chord charts: drag chords onto words, change the key and capo, switch to Nashville numbers, view chord diagrams and export to PDF. On Google Play, with a Pro subscription.</p>
           <p class="work__role">My role: studio owner and publisher (AI-assisted development).</p>
           <p class="work__links"><a class="textlink textlink--light" href="https://www.barbedwireglovegames.games/chord-scribe">Chord Scribe on the studio site</a></p>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="yours" id="yours" aria-labelledby="yours-title">
-  <div class="wrap yours__in">
-    <div class="yours__pick">
-      <h2 id="yours-title">What would your site do?</h2>
-      <p>Pick your kind of business to see the question its customers ask first, and the tool I’d build to answer it.</p>
-      <div class="picks" id="picks" role="radiogroup" aria-label="Your kind of business"></div>
-    </div>
-
-    <div class="answer" id="answer">
-      <div class="answer__swap" id="answer-swap" aria-live="polite">
-        <p class="answer__who" id="answer-who">A bakery’s customers ask first:</p>
-        <p class="answer__q" id="answer-q">“What’s fresh right now?”</p>
-        <p class="answer__tool" id="answer-tool">I’d answer it with <strong>a live bake board</strong>: what comes out of the oven today and when, set by each visitor’s own clock, with the things that usually sell out marked.</p>
-        <p class="answer__sample" id="answer-sample"><a class="textlink textlink--light" href="#samples" data-site="jr">See one working: the Juniper &amp; Rye oven schedule</a></p>
-      </div>
-      <div class="answer__hire">
-        <a class="btn btn--sun btn--lg" href="https://www.upwork.com/freelancers/~01876c95155d01cd67">Hire me on Upwork</a>
-        <p>Website packages on Upwork start at $250, and the Advanced package includes one customer tool like this. I take work through Upwork so the contract, payments and messages stay in one place. If a proposal of mine brought you here, reply to it and tell me the question your customers ask you most.</p>
+        </article>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <section class="hire" id="hire" aria-labelledby="hire-title">
+    <div class="wrap hire__in">
+      <h2 id="hire-title">Tell me the question your customers ask most.</h2>
+      <div class="hire__body">
+        <p>Website packages on Upwork start at $250, and the Advanced package includes one customer tool like the ones above. I take work through Upwork so the contract, payments and messages stay in one place. If a proposal of mine brought you here, reply to it.</p>
+        <a class="btn btn--ink btn--lg" href="https://www.upwork.com/freelancers/~01876c95155d01cd67">Hire me on Upwork</a>
+        <p class="hire__studio">Barbed Wire Glove Games is my one-person studio in Colorado. I build every site by hand with AI-assisted tools, and I test it myself on phones and desktop before you see it.</p>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer class="foot">
   <div class="wrap foot__in">
     <p>© 2026 Barbed Wire Glove Games LLC, Colorado.</p>
-    <p>The bakery, plumbing company and gym are fictional businesses made as portfolio samples; photo credits are in each site’s CREDITS file. The board at the top is a small web version of Trigonix.</p>
+    <p>The bakery, plumbing company and gym are fictional businesses made as portfolio samples; photo credits are in each site’s CREDITS file.</p>
   </div>
 </footer>
 
