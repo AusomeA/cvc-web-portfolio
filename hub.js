@@ -27,6 +27,12 @@
       try: 'Type a weight into the plate loader and the right competition plates slide onto the bar. Below it, the class schedule counts down to the next class.',
       alt: 'The Ironwood Strength Co. home page: a condensed headline and a booking button next to a loaded barbell, with the plate loader below.',
     },
+    ss: {
+      slug: 'skip-stop-pictures', name: 'Skip Stop Pictures', q: '“Where’s the trailer?”',
+      about: 'A film and TV production company in New York. Fictional business, finished working site.',
+      try: 'Pick a film in the black bar under the title: the still, the title card and the featured poster below all change. Play the trailer, then add a tee or a poster to the cart.',
+      alt: 'The Skip Stop Pictures home page: a letterboxed still of a subway platform at night, the title The Last Local, a Play trailer button and a reel of four films.',
+    },
   };
   const VIEW = { laptop: { w: 1280, h: 800 }, phone: { w: 390, h: 844 } };
 
@@ -202,6 +208,12 @@
     { k: 'gym', label: 'Gym or studio', who: 'A gym’s customers ask first:', q: '“When can I try a class?”',
       tool: 'a class schedule with a live countdown', how: 'it filters by class type, shows how long until the next one starts, and books a free first class.',
       sample: { site: 'iw', text: 'See one working: the Ironwood schedule and plate loader' } },
+    { k: 'film', label: 'Film or video studio', who: 'A film studio’s audience asks first:', q: '“Where can I watch the trailer?”',
+      tool: 'a trailer-first homepage', how: 'the newest trailer one tap from the top, a reel that switches between your films, and where to watch each one.',
+      sample: { site: 'ss', text: 'See one working: the Skip Stop Pictures film reel' } },
+    { k: 'shop', label: 'Shop or merch', who: 'A shop’s customers ask first:', q: '“Do you have it in my size?”',
+      tool: 'a shop with a working cart', how: 'sizes on every product, a cart that keeps their picks from page to page, quantities and a subtotal, then checkout through Stripe.',
+      sample: { site: 'ss', text: 'See one working: the Skip Stop Pictures merch shop' } },
     { k: 'restaurant', label: 'Restaurant', who: 'A restaurant’s customers ask first:', q: '“What can I eat here?”',
       tool: 'a menu filter', how: 'diners tick gluten-free, vegetarian or nut-free and the menu narrows to what they can order, with today’s hours on top.' },
     { k: 'truck', label: 'Food truck', who: 'A food truck’s customers ask first:', q: '“Where are you parked today?”',

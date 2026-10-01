@@ -27,6 +27,12 @@
   font-display: block;
 }
 @font-face {
+  font-family: "Q Sofia XCond";
+  src: url("hub-assets/fonts/q-sofia-xcond.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: block;
+}
+@font-face {
   font-family: "Q Archivo";
   src: url("hub-assets/fonts/q-archivo.woff2") format("woff2");
   font-weight: 100 900;
@@ -41,6 +47,7 @@
   --ink-soft: #4A4D72;   /* secondary text on paper (7.1:1) and on sea glass (5.6:1) */
   --paper: #EEF1F5;      /* the tools section */
   --mist: #C8CBE4;       /* secondary text on ink (10.7:1) */
+  --ss: #5A2A5E;         /* velvet plum: the film studio's panel (theater seats); white on it 10.9:1 */
   --white: #FFFFFF;
 
   --display: "Funnel Display", "Funnel Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -148,6 +155,7 @@ h1 {
 .tab[data-site="jr"] { --site: #C9A77E; --site-ink: #1D1712; }
 .tab[data-site="sr"] { --site: #1C5AA3; --site-ink: #FFFFFF; }
 .tab[data-site="iw"] { --site: #C92A30; --site-ink: #FFFFFF; }
+.tab[data-site="ss"] { --site: var(--ss); --site-ink: #FFFFFF; }
 
 /* panel: the site's own color, its question in its own face, and the device */
 .viewer__panel {
@@ -161,6 +169,7 @@ h1 {
 }
 .viewer__panel[data-site="sr"] { --site: #1C5AA3; --site-ink: #FFFFFF; }
 .viewer__panel[data-site="iw"] { --site: #C92A30; --site-ink: #FFFFFF; }
+.viewer__panel[data-site="ss"] { --site: var(--ss); --site-ink: #FFFFFF; }
 
 .viewer__q { grid-area: q; padding: clamp(24px, 2.8vw, 40px) clamp(24px, 2.8vw, 40px) 16px; font-size: 44px; line-height: 1; }
 .viewer__info { grid-area: info; padding: 0 clamp(24px, 2.8vw, 40px); display: flex; flex-direction: column; gap: 10px; }
@@ -169,6 +178,7 @@ h1 {
 .viewer__panel[data-site="jr"] .viewer__q { font-family: "Q Big Shoulders", var(--display); font-weight: 800; font-size: 50px; letter-spacing: -0.005em; }
 .viewer__panel[data-site="sr"] .viewer__q { font-family: "Q Mona Sans", var(--display); font-weight: 800; font-stretch: 116%; font-size: 36px; letter-spacing: -0.02em; }
 .viewer__panel[data-site="iw"] .viewer__q { font-family: "Q Archivo", var(--display); font-weight: 800; font-stretch: 62%; font-size: 52px; letter-spacing: -0.01em; }
+.viewer__panel[data-site="ss"] .viewer__q { font-family: "Q Sofia XCond", var(--display); font-weight: 800; font-size: 60px; line-height: .92; letter-spacing: 0; }
 .viewer__name { font-size: 22px; line-height: 1.2; letter-spacing: -0.01em; }
 .viewer__about { font-size: 16px; opacity: .9; }
 .viewer__try { font-size: 17px; }
@@ -186,7 +196,7 @@ h1 {
 }
 .seg button[aria-pressed="true"] { background: var(--ink); color: var(--white); }
 .viewer__panel :focus-visible { outline-color: var(--ink); }
-.viewer__panel[data-site="sr"] :focus-visible, .viewer__panel[data-site="iw"] :focus-visible { outline-color: var(--white); }
+.viewer__panel[data-site="sr"] :focus-visible, .viewer__panel[data-site="iw"] :focus-visible, .viewer__panel[data-site="ss"] :focus-visible { outline-color: var(--white); }
 
 .stage {
   position: relative;
@@ -244,10 +254,11 @@ h1 {
 .tools__head h2 { max-width: 13ch; }
 .tools__head p { color: var(--ink-soft); max-width: 32em; }
 
-.tools__list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(28px, 3.4vw, 48px); align-items: start; }
+.tools__list { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px; align-items: start; }
 .tool[data-site="jr"] { --site: #C9A77E; }
 .tool[data-site="sr"] { --site: #1C5AA3; }
 .tool[data-site="iw"] { --site: #C92A30; }
+.tool[data-site="ss"] { --site: var(--ss); }
 /* the site's color sits on top of its screenshot, like the viewer tabs */
 .tool__shot {
   width: 100%; margin-bottom: 24px;
@@ -255,6 +266,10 @@ h1 {
   box-shadow: 0 0 0 1px rgba(23, 24, 59, .14);
 }
 .tool h3 { font-size: clamp(24px, 2.1vw, 30px); letter-spacing: -0.015em; line-height: 1.1; }
+/* four across: headings get two lines and sit on the bottom one, so the site lines below them align */
+@media (min-width: 1240px) {
+  .tool h3 { min-height: 2.2em; display: flex; align-items: flex-end; }
+}
 .tool__site { margin-top: 4px; font-weight: 700; font-size: 16px; color: var(--ink-soft); }
 .tool > p:not(.tool__site) { margin-top: 12px; font-size: 17px; }
 .tool > p.tool__also { color: var(--ink-soft); font-size: 16px; }
@@ -327,6 +342,14 @@ h1 {
 .foot__in { display: grid; grid-template-columns: auto 1fr; gap: 8px 48px; }
 .foot__in p:last-child { max-width: 60em; }
 
+/* ---------- four tools no longer fit side by side: rows, image left ---------- */
+@media (max-width: 1239px) {
+  .tools__list { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+  .tool { display: grid; grid-template-columns: minmax(0, 240px) minmax(0, 1fr); column-gap: 40px; align-content: start; }
+  .tool__shot { grid-row: 1 / span 6; margin-bottom: 0; }
+  .tool > * { max-width: 40em; }
+}
+
 /* ---------- tablet ---------- */
 @media (max-width: 1099px) {
   .top__nav { display: none; }
@@ -337,7 +360,6 @@ h1 {
   .stage { height: auto; min-height: 0; padding: 22px 24px 30px; }
   .tools__head, .shipped__head, .yours__in, .hire__in { grid-template-columns: minmax(0, 1fr); }
   .works { grid-template-columns: minmax(0, 1fr); gap: 56px; }
-  .tools__list { gap: 28px; }
   .tool > p:not(.tool__site) { font-size: 16px; }
   .work { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 6fr); column-gap: 40px; align-content: start; }
   .work__tray { grid-row: 1 / span 6; margin-bottom: 0; }
@@ -347,9 +369,8 @@ h1 {
 @media (max-width: 899px) {
   .intro__head { grid-template-columns: minmax(0, 1fr); row-gap: 16px; }
   h1 { max-width: 14ch; }
-  .tools__list { grid-template-columns: minmax(0, 1fr); gap: 48px; }
-  .tool { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); column-gap: 32px; align-content: start; }
-  .tool__shot { grid-row: 1 / span 6; margin-bottom: 0; }
+  .tool { grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); column-gap: 32px; }
+  .tab__name .tab__more { display: none; }
 }
 
 /* ---------- phone ---------- */
@@ -375,6 +396,7 @@ h1 {
   .viewer__panel[data-site="jr"] .viewer__q { font-size: 40px; }
   .viewer__panel[data-site="sr"] .viewer__q { font-size: 28px; }
   .viewer__panel[data-site="iw"] .viewer__q { font-size: 42px; }
+  .viewer__panel[data-site="ss"] .viewer__q { font-size: 48px; }
   .stage { padding: 16px 16px 22px; }
   .stage[data-mode="laptop"] .device__use { padding-bottom: 8px; }
   .stage[data-mode="laptop"] .device__use span { font-size: 13px; padding: 6px 11px; }
@@ -388,7 +410,16 @@ h1 {
   .foot__in { grid-template-columns: minmax(0, 1fr); }
 }
 
+/* four tabs on a phone: the kind only (the panel names the business right below) */
+@media (max-width: 559px) {
+  .tab { padding: 12px 8px 13px; }
+  .tab__kind { font-size: 16px; }
+  .tab__name { display: none; }
+}
+
 @media (max-width: 380px) {
+  .tab { padding: 12px 6px 13px; }
+  .tab__kind { font-size: 15px; }
   .brand__mark { width: 28px; height: 14px; }
   .brand__name { font-size: 15px; max-width: 7.5em; }
   .top__cta { padding: 8px 11px; font-size: 14px; }
